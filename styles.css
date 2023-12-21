@@ -19,7 +19,7 @@ body {
 
 /* Header and Navigation Styles */
 header {
-    background: rgba(0, 102, 0, 0.5); /* Semi-transparent background for nav bar */
+    background: rgba(0, 40, 0, 0.5); /* Semi-transparent background for nav bar */
 }
 
 nav ul {
@@ -48,7 +48,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 60px); /* Height minus nav bar height */
+    height: calc(50vh - 60px); /* Height minus nav bar height */
     text-align: center;
 }
 
@@ -63,6 +63,7 @@ main h1 {
 .logo {
     max-width: 150px; /* Adjust based on actual size required */
     margin-bottom: 2rem;
+    opacity: 0.9; /* 10% transparency */
 }
 
 /* Footer Styles */
@@ -73,55 +74,81 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 102, 0, 0.5); /* Semi-transparent background for footer */
+    background: rgba(0, 40, 0, 0.5); /* Semi-transparent background for footer */
     font-size: 0.9rem;
 }
 
-/* Additional styles for the dropdown menu */
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
 
-/* Hide the dropdown links by default */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(0, 102, 0, 0.5); /* or any other color you prefer */
-    min-width: 160px; /* Set the width of the dropdown content box */
+    background-color: rgba(0, 40, 0, 0.5);
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
-/* Position the dropdown content directly below the dropdown button */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Display the dropdown content when hovering over the dropdown button */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Style the links inside the dropdown */
 .dropdown-content a {
-    color: rgb(255, 255, 255); /* Change color as needed */
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-/* Change the background color of the dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #ddd; /* Light grey background */
 }
 
-/* Optional: Add a slight transition effect for the dropdown to appear smoothly */
-.dropdown-content {
+/* Submenu Styles */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-content-sub {
+    display: none;
+    position: absolute;
+    left: 100%; /* Position the dropdown content to the right */
+    top: 0;
+    background-color: rgba(0, 40, 0, 0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2; /* Ensuring it stacks on top of the first level dropdown */
+}
+
+.dropdown-submenu:hover .dropdown-content-sub {
+    display: block;
+}
+
+.dropdown-content-sub a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content-sub a:hover {
+    background-color: #ddd; /* Light grey background */
+}
+
+/* Transitions for dropdown */
+.dropdown-content, .dropdown-content-sub {
     transition: opacity 0.3s ease;
     opacity: 0;
     visibility: hidden;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown-submenu:hover .dropdown-content-sub {
     opacity: 1;
     visibility: visible;
 }
