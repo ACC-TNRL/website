@@ -1,60 +1,11 @@
-/* Add this to your styles.css */
-
-/* Style the navigation bar */
-nav ul {
-    list-style-type: none;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #015f1e; /* Change the color as per your design */
+    box-sizing: border-box;
 }
 
-nav li {
-    float: left;
-}
-
-nav li a {
-    display: block;
-    color: white; /* Change the text color as per your design */
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color on hover */
-nav li a:hover {
-    background-color: #3e8e41; /* Change the hover color as per your design */
-}
-
-/* Dropdown container - hidden by default */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #015f1e; /* Change as needed */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Dropdown links */
-.dropdown-content a {
-    color: white; /* Change as needed */
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Style the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41; /* Change as needed */
-}
-
+/* Body and Background Image Styles */
 body {
     background-color: #000; /* Fallback color */
     background-image: url('background.png');
@@ -62,4 +13,115 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white; /* Default text color */
+}
+
+/* Header and Navigation Styles */
+header {
+    background: rgba(0, 102, 0, 0.5); /* Semi-transparent background for nav bar */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /* Evenly space navigation links */
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover, nav li a:focus {
+    color: #006600; /* Highlight color for hover and focus */
+}
+
+/* Main Welcome Message Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Height minus nav bar height */
+    text-align: center;
+}
+
+main h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo Styles */
+.logo {
+    max-width: 150px; /* Adjust based on actual size required */
+    margin-bottom: 2rem;
+}
+
+/* Footer Styles */
+footer {
+    text-align: left;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 102, 0, 0.5); /* Semi-transparent background for footer */
+    font-size: 0.9rem;
+}
+
+/* Additional styles for the dropdown menu */
+
+/* Hide the dropdown links by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 102, 0, 0.5); /* or any other color you prefer */
+    min-width: 160px; /* Set the width of the dropdown content box */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Position the dropdown content directly below the dropdown button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Display the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255); /* Change color as needed */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Change the background color of the dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd; /* Light grey background */
+}
+
+/* Optional: Add a slight transition effect for the dropdown to appear smoothly */
+.dropdown-content {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
 }
