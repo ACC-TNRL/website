@@ -1,0 +1,65 @@
+/* Add this to your styles.css */
+
+/* Style the navigation bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #015f1e; /* Change the color as per your design */
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white; /* Change the text color as per your design */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+nav li a:hover {
+    background-color: #3e8e41; /* Change the hover color as per your design */
+}
+
+/* Dropdown container - hidden by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #015f1e; /* Change as needed */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: white; /* Change as needed */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41; /* Change as needed */
+}
+
+body {
+    background-color: #000; /* Fallback color */
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
