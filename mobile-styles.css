@@ -1,0 +1,120 @@
+/* mobile-styles.css */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0; /* Verwijder padding voor volledige breedte */
+        background-color: #002800; /* Veranderd naar een solide kleur voor geen transparantie */
+        width: 100%;
+        height: 5%;
+        position: fixed; /* Zorg dat de header bovenaan blijft */
+        top: 0;
+        z-index: 10;
+    }
+
+    /* Mobile menu icon (hamburger) */
+    .mobile-menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40px; /* Stel de gewenste breedte in */
+        height: 40px; /* Stel de gewenste hoogte in */
+        padding: 10px; /* Padding voor touch area */
+        position: relative; /* Veranderd naar relative zodat het binnen de header blijft */
+        z-index: 15;
+    }
+
+    .bar {
+        background-color: white;
+        height: 3px;
+        width: 100%; /* Volledige breedte van de container */
+        border-radius: 1px; /* Licht afgeronde hoeken */
+    }
+
+    /* Verberg het desktop navigatiemenu */
+    .desktop-menu {
+        display: none;
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9); /* Donkere achtergrond voor het menu */
+        z-index: 5; /* Onder het hamburger icoon */
+        overflow-y: auto; /* Maak scrollbaar indien nodig */
+    }
+
+    .mobile-menu.active {
+        display: block; /* Toon het mobiele menu wanneer actief */
+    }
+
+    .mobile-menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 60px; /* Ruimte voor de header */
+    }
+
+    .mobile-menu ul li a {
+        color: white;
+        padding: 15px;
+        display: block;
+        text-decoration: none;
+    }
+
+    /* Social media icons */
+    .social-icons {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 20px; /* Aangepast voor consistentie aan de rechterkant */
+        top: 50%; /* Centreren ten opzichte van de hoogte van de header */
+        transform: translateY(-50%); /* Centreren met transform */
+        z-index: 15;
+    }
+
+    .social-icons a {
+        color: white; /* Iconen wit kleuren */
+        font-size: 1.5rem; /* Vergroot de iconen */
+        padding: 8px; /* Geeft wat ruimte binnen de links */
+        margin-left: 8px; /* Zorgt voor ruimte tussen de iconen */
+        margin-right: 8px;
+        border-radius: 0%; /* Maakt de iconen cirkelvormig */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Voegt een subtiele schaduw toe */
+        display: flex; /* Zorgt ervoor dat de a-tags zich gedragen als flex-items */
+        justify-content: center; /* Centreert de iconen horizontaal */
+        align-items: center; /* Centreert de iconen verticaal */
+        width: 2rem; /* Stelt een standaardgrootte in voor de iconen */
+        height: 2rem; /* Stelt een standaardgrootte in voor de iconen */
+        transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Maakt een gladde overgang voor de hover effecten */
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0; /* Verwijder padding voor volledige breedte */
+        background-color: #002800; /* Veranderd naar een solide kleur voor geen transparantie */
+        width: 100%;
+        height: 5%;
+        position: fixed; /* Zorg dat de header bovenaan blijft */
+        top: 0%;
+        z-index: 10;
+    }
+
+    .footer-content {
+        padding-left: 15px; /* Voeg hier de gewenste padding toe */
+        width: 100%; /* Zorg dat de container de volledige breedte van de footer inneemt */
+    }
+
+}
+
+

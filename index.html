@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thursday Night Racing League</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="desktop-menu">
                 <li><a href="#home">Home</a></li>
                 <li class="dropdown">
                     <a href="#league" class="dropbtn">TNRL League</a>
@@ -36,11 +45,30 @@
                             </div>
                         </div>
                     </div>
-                </li>                
+                </li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="https://www.paypal.com/donate/?hosted_button_id=73AQGHK9947NC" target="_blank">Donate</a></li>
             </ul>
+
+            <div class="social-icons">
+                <a href="https://discord.gg/BfQFWw6uNQ" target="_blank" class="discord"><i class="fab fa-discord"></i></a>
+                <a href="https://www.youtube.com/channel/UCY-q-GOro_fErpo4hQVC7gQ" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <!-- Mobiel menu toegevoegd -->
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#league" class="dropbtn">TNRL League</a>
+                        <!-- Dropdown inhoud hier -->
+                    </li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.paypal.com/donate/?hosted_button_id=73AQGHK9947NC" target="_blank">Donate</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -50,10 +78,27 @@
             <img src="logo.png" alt="Thursday Night Racing League Logo" class="logo"> <!-- Logo added here -->
             <!-- Add a carousel or intro content here -->
         </section>
+<!-- Latest News Section -->
+        <section id="latest-news" class="news-section">
+            <div class="container">
+               <h2>Latest news</h2>
+                <div class="news-item">
+                  <img src="news-image.jpg" alt="Nieuws Afbeelding" class="news-image">
+                  <div class="news-content">
+                        <h3>2023-1: The season has started!</h3>
+                     <p class="news-date">17-09-2023</p>
+                      <p>The opening round of the 2023 TNRL Championship at the legendary Silverstone circuit delivered a breathtaking battle that had fans on the edge of their seats...</p>
+                      <a href="news-article.html" class="read-more">Read more</a>
+                   </div>
+               </div>
+          </div>
+        </section>
     </main>    
 
     <footer>
-        <p>&copy; 2023 Thursday Night Racing League</p>
+        <div class="footer-content">
+            <p>&copy; 2023 Thursday Night Racing League</p>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>

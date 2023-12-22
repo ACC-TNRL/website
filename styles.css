@@ -1,3 +1,4 @@
+/* styles.css */
 /* General Reset */
 * {
     margin: 0;
@@ -6,7 +7,15 @@
 }
 
 /* Body and Background Image Styles */
+html {
+    height: 100%; /* Nieuwe regel */
+}
+
 body {
+    display: flex; /* Maakt body een flex container */
+    flex-direction: column; /* Stelt de hoofdas van de flex container in als de verticale as */
+    min-height: 100%; /* Zorgt ervoor dat de body minstens de hoogte van de viewport heeft */
+    margin: 0; /* Reset standaardmarges */
     background-color: #000; /* Fallback color */
     background-image: url('background.png');
     background-size: cover;
@@ -20,14 +29,43 @@ body {
 /* Header and Navigation Styles */
 header {
     background: rgba(0, 40, 0, 0.8); /* More opaque for better readability */
+    padding: 1rem; /* Adds padding on the sides */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between; /* Spaces nav-items and social icons */
+    align-items: center; /* Vertically centers items */
+    height: 100%; /* Ensures the nav takes the full height of the header */
+}
+
+/* Verberg het standaardmenu en toon het hamburgermenu op mobiele apparaten */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu {
+        display: none;
+    }
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center; /* Evenly space navigation links */
-    align-items: center;
-    padding: 1rem 0;
+    justify-content: center; /* Centers the nav-items */
+    flex: 1; /* Allows nav-items to grow and fill the space */
+    align-items: center; /* Vertically centers the nav-items */
+}
+
+nav .social-icons {
+    display: flex;
+    align-items: center; /* This will vertically center the social icons */
 }
 
 nav li a {
@@ -46,7 +84,8 @@ nav li a:hover, nav li a:focus {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex: 1 0 auto;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     padding: 4rem 0; /* Add padding to give some space around content */
@@ -74,9 +113,11 @@ footer {
     background: rgba(0, 40, 0, 0.8); /* Consistency with header */
     color: white;
     font-size: 0.9rem;
-    position: absolute; /* Changed to relative */
+    position: sticky; /* Changed to relative */
+    flex-shrink: 0;
     bottom: 0;
     width: 100%;
+    margin-top: auto;
 }
 
 /* Dropdown Menu Styles */
@@ -87,7 +128,7 @@ footer {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(0, 40, 0, 0.5);
+    background-color: rgba(0, 40, 0, 0.8);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -119,7 +160,7 @@ footer {
     position: absolute;
     left: 100%; /* Position the dropdown content to the right */
     top: 0;
-    background-color: rgba(0, 40, 0, 0.5);
+    background-color: rgba(0, 40, 0, 0.8);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2; /* Ensuring it stacks on top of the first level dropdown */
@@ -153,3 +194,98 @@ footer {
     opacity: 1;
     visibility: visible;
 }
+
+/* Social Icon Styles */
+.social-icons a {
+    color: white; /* Iconen wit kleuren */
+    font-size: 1.3rem; /* Vergroot de iconen */
+    padding: 0.5rem; /* Geeft wat ruimte binnen de links */
+    margin: 0 0.25rem; /* Zorgt voor ruimte tussen de iconen */
+    border-radius: 50%; /* Maakt de iconen cirkelvormig */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Voegt een subtiele schaduw toe */
+    display: flex; /* Zorgt ervoor dat de a-tags zich gedragen als flex-items */
+    justify-content: center; /* Centreert de iconen horizontaal */
+    align-items: center; /* Centreert de iconen verticaal */
+    width: 3rem; /* Stelt een standaardgrootte in voor de iconen */
+    height: 3rem; /* Stelt een standaardgrootte in voor de iconen */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Maakt een gladde overgang voor de hover effecten */
+}
+
+.social-icons a:hover {
+    color: white; /* Behoudt de witte kleur van het icoon bij hover */
+    transform: translateY(-2px); /* Verplaatst het icoon een beetje omhoog */
+}
+
+.social-icons a.discord:hover {
+    background-color: #7289da; /* Discord paars bij hover */
+}
+
+.social-icons a.youtube:hover {
+    background-color: #FF0000; /* YouTube rood bij hover */
+}
+
+/* News Section Styles */
+.news-section {
+    background: rgba(12, 12, 12, 0.8); /* Donkere achtergrond met een opacity van 0.8 */
+    color: #ffffff; /* Witte tekst voor leesbaarheid */
+    margin-top: 180px;
+    padding: 40px 0; /* Verticale padding boven, horizontale padding rechts en links, verticale padding onder */
+}
+
+
+.news-section .container {
+    max-width: 1200px; /* Maximale breedte van de content */
+    margin: 0 auto; /* Centreert de container */
+    padding: 0 15px; /* Padding aan de zijkanten */
+}
+
+.news-section h2 {
+    font-size: 2.5rem; /* Grotere lettergrootte voor titel */
+    margin-bottom: 30px; /* Ruimte onder de titel */
+    color: #FFA500; /* Oranje kleur voor de titel */
+    text-transform: uppercase; /* Maakt de tekst in hoofdletters */
+}
+
+.news-section .news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Ruimte tussen nieuwsitems */
+}
+
+.news-section .news-image {
+    flex-shrink: 0; /* Voorkomt dat de afbeelding krimpt */
+    margin-right: 20px; /* Ruimte tussen afbeelding en tekst */
+    width: 300px; /* Breedte van de nieuwsafbeelding */
+    height: 200px; /* Hoogte van de nieuwsafbeelding */
+    object-fit: cover; /* Zorgt dat de afbeelding de ruimte vult */
+    border-radius: 10px; /* Afgeronde hoeken voor de afbeelding */
+}
+
+.news-section .news-content {
+    flex: 1; /* Vult de overgebleven ruimte */
+}
+
+.news-section .news-content h3 {
+    font-size: 1.8rem; /* Lettergrootte voor nieuwsitem titel */
+    margin-bottom: 10px; /* Ruimte onder de titel */
+}
+
+.news-section .news-date {
+    font-size: 1rem; /* Lettergrootte voor de datum */
+    color: #CCCCCC; /* Lichtgrijze kleur voor de datum */
+    margin-bottom: 10px; /* Ruimte onder de datum */
+}
+
+.news-section .read-more {
+    font-weight: bold; /* Vetgedrukt voor de 'Lees meer' link */
+    color: #FFA500; /* Oranje kleur voor de 'Lees meer' link */
+    text-decoration: none; /* Geen onderstreping */
+    transition: color 0.3s; /* Overgangseffect voor hover */
+}
+
+.news-section .read-more:hover {
+    color: #ffffff; /* Witte kleur bij hover */
+}
+
+
+
