@@ -287,5 +287,44 @@ footer {
     color: #ffffff; /* Witte kleur bij hover */
 }
 
+/* Season Section Styles */
+/* Container for the seasons area */
+.container {
+    max-width: 250px; /* Adjust the max-width as necessary */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
+}
 
+/* Individual season cards */
+.season-card {
+    display: flex; /* Allows for flexible layouts inside the card */
+    flex-direction: column; /* Stacks items vertically */
+    max-width: 100%; /* Ensures the card is not wider than its container */
+    margin-bottom: 20px; /* Spacing between cards */
+}
+
+/* The image within the card */
+.season-image {
+    max-width: 100%; /* Makes image responsive */
+    height: auto; /* Keeps image aspect ratio */
+}
+
+/* The content within the card */
+.season-content {
+    padding: 20px; /* Adjust padding as necessary */
+    background: #fff; /* Optional: sets background color for content area */
+    color: #000;
+}
+
+/* Style for the info/sign-up button */
+.info-signup-btn {
+    background-color: #009578; /* Color for the button */
+    color: rgb(0, 0, 0); /* Text color for the button */
+    text-decoration: none; /* Removes underline from links */
+    padding: 10px 15px; /* Adjust padding as necessary */
+    display: inline-block; /* Allows block-level styles like margin */
+    margin-top: 10px; /* Spacing above the button */
+    border: none; /* Removes border */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
 

@@ -1,0 +1,106 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thursday Night Racing League</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="desktop-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#league" class="dropbtn">TNRL League</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-submenu">
+                            <a href="#ps4">PS4</a>
+                            <div class="dropdown-content-sub">
+                                <a href="rules-ps4.html">Rules</a>
+                                <a href="#seasons-ps4">Seasons</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-submenu">
+                            <a href="#ps5">PS5</a>
+                            <div class="dropdown-content-sub">
+                                <a href="#rules-ps5.html">Rules</a>
+                                <a href="#seasons-ps5">Seasons</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-submenu">
+                            <a href="#pc">PC</a>
+                            <div class="dropdown-content-sub">
+                                <a href="rules-pc.html">Rules</a>
+                                <a href="seasons-pc.html">Seasons</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.paypal.com/donate/?hosted_button_id=73AQGHK9947NC" target="_blank">Donate</a></li>
+            </ul>
+
+            <div class="social-icons">
+                <a href="https://discord.gg/BfQFWw6uNQ" target="_blank" class="discord"><i class="fab fa-discord"></i></a>
+                <a href="https://www.youtube.com/channel/UCY-q-GOro_fErpo4hQVC7gQ" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <!-- Mobiel menu toegevoegd -->
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#league" class="dropbtn">TNRL League</a>
+                        <!-- Dropdown inhoud hier -->
+                    </li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.paypal.com/donate/?hosted_button_id=73AQGHK9947NC" target="_blank">Donate</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="welcome-section">
+            <h1>TNRL Seasons (PC)</h1>
+            <img src="logo.png" alt="Thursday Night Racing League Logo" class="logo"> <!-- Logo added here -->
+            <!-- Add a carousel or intro content here -->
+        </section>
+        <section id="seasons" class="seasons-section">
+            <div class="container">
+                <!-- Card for Season 1 -->
+                <div class="season-card">
+                    <img src="s_01_banner.png" alt="Season 1 Image" class="season-image">
+                    <div class="season-content">
+                        <h3>Season 1: The Beginning</h3>
+                        <p class="season-period">23.12.2023 - 23.12.2023</p>
+                        <p>Highlights from the inaugural season of racing...</p>
+                        <a href="season1-info.html" class="info-signup-btn">Information</a>
+                    </div>
+                </div>
+                <!-- Repeat the card structure for each additional season -->
+            </div>
+        </section>
+    </main>    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Thursday Night Racing League</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -115,6 +115,19 @@
         width: 100%; /* Zorg dat de container de volledige breedte van de footer inneemt */
     }
 
+    /* Season Section Styles */
+    .season-card {
+        margin-bottom: 10px;
+    }
+    
+    .season-content {
+        padding: 10px;
+    }
+    
+    .info-signup-btn {
+        padding: 8px 16px;
+    }
+
 }
 
 
