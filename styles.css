@@ -56,7 +56,7 @@ main h1 {
 .news-section {
     background: rgba(12, 12, 12, 0.8); /* Donkere achtergrond met een opacity van 0.8 */
     color: #ffffff; /* Witte tekst voor leesbaarheid */
-    margin-top: 180px;
+    margin-top: 75px;
     padding: 40px 0; /* Verticale padding boven, horizontale padding rechts en links, verticale padding onder */
 }
 
@@ -216,4 +216,53 @@ main h1 {
 
 .rules-section .points-system table td {
     background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background for cells */
+}
+
+.tab-container {
+    background: rgba(0, 0, 0, 0.8); /* Donkere achtergrond met semi-transparantie */
+    border-radius: 10px; /* Afgeronde hoeken */
+    padding: 20px; /* Binnenruimte */
+    margin: 20px; /* Buitenruimte */
+    color: #ffffff; /* Witte tekst */
+}
+
+/* Aanpassen voor betere leesbaarheid */
+.tab-content > .tab-pane {
+    margin-top: 20px; /* Voegt ruimte toe boven de tab content */
+}
+
+/* Zorg ervoor dat de tekst goed leesbaar is tegen de achtergrond */
+.main h1, .main h2, .main h3, .main p {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Text schaduw voor leesbaarheid */
+}
+
+/* Rules-pc table rules */
+.table-rules {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds shadow for depth */
+}
+
+.table-rules th,
+.table-rules td {
+    padding: 5px; /* Increased padding */
+    text-align: center; /* Center align text */
+    border: 1px solid #ddd;
+}
+
+.table-rules th {
+    background-color: rgba(0, 40, 0, 1.0); /* A lighter color for readability */
+    color: white;
+}
+
+
+.table-rules td {
+    font-size: 1.1rem; /* Slightly larger font size */
+}
+
+@media (max-width: 768px) {
+    .table-rules, .table-rules th, .table-rules td {
+        font-size: 5vw; /* Responsive font size */
+    }
 }

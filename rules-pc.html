@@ -1,16 +1,22 @@
-<!-- index.html -->
+<!-- rules-pc.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thursday Night Racing League</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 768px)">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thursday Night Racing League</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- Include Bootstrap JS and its dependencies -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+
 <body>
     <header>
         <nav>
@@ -21,7 +27,7 @@
             </div>
 
             <ul class="desktop-menu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="#league" class="dropbtn">TNRL League</a>
                     <div class="dropdown-content">
@@ -73,101 +79,135 @@
             </div>
         </nav>
     </header>
-
     <main>
         <section id="home" class="welcome-section">
             <h1>Rules PC</h1>
             <img src="logo.png" alt="Thursday Night Racing League Logo" class="logo"> <!-- Logo added here -->
             <!-- Add a carousel or intro content here -->
         </section>
-<!-- Rules Section -->
-<section id="rules" class="rules-section">
-    <div class="container">
-        <h2>Racing Rules</h2>
-        <div class="rule-categories">
-            <div class="rule-category">
-                <h3>Sprint Round:</h3>
-                <ul>
-                    <li>Qualifying will run for 5 minutes.</li>
-                    <li>Each race will have its own qualifying.</li>
-                    <li>Each round will have 2x 35-minute races.</li>
-                    <li>Each race will require 1 pitstop with fuel taken, tyres optional.</li>
-                    <li>Each race will have its own points, awarded as detailed below.</li>
-                </ul>
-            </div>
-            <div class="rule-category">
-                <h3>Endurance:</h3>
-                <ul>
-                    <li>Qualifying will run for 10 minutes.</li>
-                    <li>Each round will have a single 75-minute race.</li>
-                    <li>Each race will require 1 pitstop with fuel taken, tyres optional.</li>
-                    <li>Endurance rounds will receive a 150% points bonus.</li>
-                </ul>
-            </div>
-            <div class="rule-category">
-                <h3>General Rules:</h3>
-                <ul>
-                    <li>Qualifying sessions will start at 19:45 UK / 20:45 CET</li>
-                    <li>Servers will be reset at approximately 19:00 UK / 20:00 CET for free practice.</li>
-                    <li>Each track we visit is a round. Points will be scored for each race at each round. I.E. Sprint round is 25 points to each overall race winner and so on based on finishing position.</li>
-                    <li>Changes in car will result in loss of all championship points gained up to the change in car, for both individual and teams championship</li>Changes in car will result in loss of all championship points gained up to the change in car, for both individual and teams championship
-                    <li>Use realistic names instead of nicknames or usernames in our league. This will make the experience more authentic and enjoyable</li>Use realistic names instead of nicknames or usernames in our league. This will make the experience more authentic and enjoyable
-                    <li>A driver must finish the race to be awarded points.</li>
-                    <li>A driver must be signed up to the championship to earn points</li>
-                </ul>
+        <div class="container mt-5">
+            <!-- Tab navigation -->
+            <ul class="nav nav-pills mb-3 justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="sprint-tab" data-toggle="tab" href="#sprint" role="tab" aria-controls="sprint" aria-selected="true">Sprint Races</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="endurance-tab" data-toggle="tab" href="#endurance" role="tab" aria-controls="endurance" aria-selected="false">Endurance Races</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="false">General Rules</a>
+                </li>
+            </ul>
+    
+            <!-- Tab content -->
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="sprint" role="tabpanel" aria-labelledby="sprint-tab">
+                    <div class="tab-container">
+                        <h3>Sprint Round:</h3>
+                        <div class="container rules-text">
+                            <p>Qualifying will run for 5 minutes.</p>
+                            <p>Each race will have its own qualifying.</p>
+                            <p>Each round will have 2x 35-minute races.</p>
+                            <p>Each race will require 1 pitstop with fuel taken, tyres optional.</p>
+                            <p>Each race will have its own points, awarded as detailed below.</p>
+                        </div>
+                        <section id="sprint-points" class="points-section">
+                            <h3>Points System:</h3>
+                            <ul>
+                                <p>1st: 25 points</p>
+                                <p>2nd: 18 points</p>
+                                <p>3rd: 15 points</p>
+                                <p>4th: 12 points</p>
+                                <p>5th: 10 points</p>
+                                <p>6th: 8 points</p>
+                                <p>7th: 6 points</p>
+                                <p>8th: 4 points</p>
+                                <p>9th: 2 points</p>
+                                <p>10th: 1 point</p>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="endurance" role="tabpanel" aria-labelledby="endurance-tab">
+                    <div class="tab-container">
+                        <h3>Endurance:</h3>
+                        <div class="container rules-text">
+                            <p>Qualifying will run for 10 minutes.</p>
+                            <p>Each round will have a single 75-minute race.</p>
+                            <p>Each race will require 1 pitstop with fuel taken, tyres optional.</p>
+                            <p>Endurance rounds will receive a 150% points bonus.</p>
+                        </div>
+                        <section id="endurance-points" class="points-section">
+                            <h3>Points System:</h3>
+                            <table>
+                                <table class="table-rules">
+                                    <thead>
+                                      <tr>
+                                        <th>Position</th>
+                                        <th>Points</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>1st</td>
+                                        <td>38 points</td>
+                                      </tr>
+                                <tr>
+                                    <td>2nd</td>
+                                    <td>27 points</td>
+                                </tr>
+                                <tr>
+                                    <td>3rd</td>
+                                    <td>23 points</td>
+                                </tr>
+                                <tr>
+                                    <td>4th</td>
+                                    <td>18 points</td>
+                                </tr>
+                                <tr>
+                                    <td>5th</td>
+                                    <td>15 points</td>
+                                </tr>
+                                <tr>
+                                    <td>6th</td>
+                                    <td>12 points</td>
+                                </tr>
+                                <tr>
+                                    <td>7th</td>
+                                    <td>9 points</td>
+                                </tr>
+                                <tr>
+                                    <td>8th</td>
+                                    <td>6 points</td>
+                                </tr>
+                                <tr>
+                                    <td>9th</td>
+                                    <td>3 points</td>
+                                </tr>
+                                <tr>
+                                    <td>10th</td>
+                                    <td>2 points</td>
+                                </tr>
+                            </table>
+                        </section>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="general" role="tabpanel" aria-labelledby="general-tab">
+                    <div class="tab-container">
+                        <h3>General Rules:</h3>
+                        <div class="container rules-text">
+                            <p>Qualifying sessions will start at 19:45 UK / 20:45 CET</p>
+                            <p>Servers will be reset at approximately 19:00 UK / 20:00 CET for free practice.</p>
+                            <p>Each track we visit is a round. Points will be scored for each race at each round. I.E. Sprint round is 25 points to each overall race winner and so on based on finishing position.</p>
+                            <p>Changes in car will result in loss of all championship points gained up to the change in car, for both individual and teams championship</p>
+                            <p>Use realistic names instead of nicknames or usernames in our league. This will make the experience more authentic and enjoyable</p>
+                            <p>A driver must finish the race to be awarded points.</p>
+                            <p>A driver must be signed up to the championship to earn points</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="points-system">
-            <h3>Points System:</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Sprint Race position</th>
-                        <th>Overall points</th>
-                        <th>AM points</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Sprint Race points rows -->
-                    <tr><td>1</td><td>25</td><td>25</td></tr>
-                    <tr><td>2</td><td>18</td><td>18</td></tr>
-                    <tr><td>3</td><td>15</td><td>15</td></tr>
-                    <!-- ... other rows ... -->
-                    <tr><td>10</td><td>1</td><td>1</td></tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th>Endurance Race position</th>
-                        <th>Overall points</th>
-                        <th>AM points</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Endurance Race points rows -->
-                    <tr><td>1</td><td>38</td><td>38</td></tr>
-                    <tr><td>2</td><td>27</td><td>27</td></tr>
-                    <tr><td>3</td><td>23</td><td>23</td></tr>
-                    <!-- ... other rows ... -->
-                    <tr><td>10</td><td>2</td><td>2</td></tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th>Qualifying position</th>
-                        <th>Overall points</th>
-                        <th>AM points</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Qualifying points rows -->
-                    <tr><td>1</td><td>3</td><td>3</td></tr>
-                    <tr><td>2</td><td>2</td><td>2</td></tr>
-                    <tr><td>3</td><td>1</td><td>1</td></tr>
-                </tbody>
-            </table>          
-        </div>
-        <!-- Add additional rules and points details here -->
-    </div>
-</section>
     </main>    
 
     <footer>
@@ -179,3 +219,5 @@
     <script src="scripts.js"></script>
 </body>
 </html>
+
+

@@ -62,7 +62,7 @@ nav ul.desktop-menu li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(0, 40, 0, 0.8);
+    background-color: rgba(0, 40, 0, 1.0);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -94,7 +94,7 @@ nav ul.desktop-menu li a:hover {
     position: absolute;
     left: 100%; /* Position the dropdown content to the right */
     top: 0;
-    background-color: rgba(0, 40, 0, 0.8);
+    background-color: #ddd;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2; /* Ensuring it stacks on top of the first level dropdown */
@@ -105,7 +105,7 @@ nav ul.desktop-menu li a:hover {
 }
 
 .dropdown-content-sub a {
-    color: white;
+    color: rgba(0, 40, 0, 1.0);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
