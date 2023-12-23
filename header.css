@@ -1,0 +1,159 @@
+/* Header and Navigation Styles */
+header {
+    background: rgba(0, 40, 0, 0.8); /* More opaque for better readability */
+    padding: 1rem; /* Adds padding on the sides */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between; /* Spaces nav-items and social icons */
+    align-items: center; /* Vertically centers items */
+    height: 100%; /* Ensures the nav takes the full height of the header */
+}
+
+/* Verberg het standaardmenu en toon het hamburgermenu op mobiele apparaten */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Centers the nav-items */
+    flex: 1; /* Allows nav-items to grow and fill the space */
+    align-items: center; /* Vertically centers the nav-items */
+}
+
+nav .social-icons {
+    display: flex;
+    align-items: center; /* This will vertically center the social icons */
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+/* Navigation button hover styles */
+nav ul.desktop-menu li a:hover {
+    background-color: #ff4500; /* Verandert de achtergrondkleur bij hover */
+    color: #ffffff; /* Verandert de tekstkleur bij hover */
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 40, 0, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Light grey background */
+}
+
+/* Submenu Styles */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-content-sub {
+    display: none;
+    position: absolute;
+    left: 100%; /* Position the dropdown content to the right */
+    top: 0;
+    background-color: rgba(0, 40, 0, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2; /* Ensuring it stacks on top of the first level dropdown */
+}
+
+.dropdown-submenu:hover .dropdown-content-sub {
+    display: block;
+}
+
+.dropdown-content-sub a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content-sub a:hover {
+    background-color: #ddd; /* Light grey background */
+}
+
+/* Transitions for dropdown */
+.dropdown-content, .dropdown-content-sub {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-submenu:hover .dropdown-content-sub {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Social Icon Styles */
+.social-icons a {
+    color: white; /* Iconen wit kleuren */
+    font-size: 1.3rem; /* Vergroot de iconen */
+    padding: 0.5rem; /* Geeft wat ruimte binnen de links */
+    margin: 0 0.25rem; /* Zorgt voor ruimte tussen de iconen */
+    border-radius: 50%; /* Maakt de iconen cirkelvormig */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Voegt een subtiele schaduw toe */
+    display: flex; /* Zorgt ervoor dat de a-tags zich gedragen als flex-items */
+    justify-content: center; /* Centreert de iconen horizontaal */
+    align-items: center; /* Centreert de iconen verticaal */
+    width: 3rem; /* Stelt een standaardgrootte in voor de iconen */
+    height: 3rem; /* Stelt een standaardgrootte in voor de iconen */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Maakt een gladde overgang voor de hover effecten */
+}
+
+.social-icons a:hover {
+    color: white; /* Behoudt de witte kleur van het icoon bij hover */
+    transform: translateY(-2px); /* Verplaatst het icoon een beetje omhoog */
+}
+
+.social-icons a.discord:hover {
+    background-color: #7289da; /* Discord paars bij hover */
+}
+
+.social-icons a.youtube:hover {
+    background-color: #FF0000; /* YouTube rood bij hover */
+}
