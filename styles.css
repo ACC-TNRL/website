@@ -328,3 +328,65 @@ footer {
     cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
+/* Rules Section Styles */
+.rules-section {
+    background: rgba(12, 12, 12, 0.8); /* Consistent with the news section style */
+    color: #ffffff; /* White text for readability */
+    padding: 40px 0; /* Vertical padding for the section */
+    margin-top: 30px; /* Space above the section */
+}
+
+.rules-section .container {
+    max-width: 1200px; /* Same as news section for consistency */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Padding on the sides */
+}
+
+.rules-section h2 {
+    font-size: 2.5rem; /* Larger font size for the section title */
+    margin-bottom: 30px; /* Space below the title */
+    color: #FFA500; /* Orange color for the title */
+    text-transform: uppercase; /* Uppercase text for stylistic choice */
+}
+
+.rules-section .rule-category h3 {
+    font-size: 1.8rem; /* Font size for category titles */
+    color: #FFA500; /* Orange color for consistency with the section title */
+    margin-bottom: 20px; /* Space below the category title */
+}
+
+.rules-section .rule-category ul {
+    list-style-type: none; /* Remove default list styling */
+    padding-left: 20px; /* Indent list items */
+}
+
+.rules-section .rule-category ul li {
+    font-size: 1rem; /* Font size for list items */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.rules-section .points-system {
+    margin-top: 30px; /* Space above the points system */
+}
+
+.rules-section .points-system table {
+    width: 100%; /* Table takes full width of its container */
+    border-collapse: collapse; /* Collapses borders between table cells */
+    margin-top: 20px; /* Space above the table */
+}
+
+.rules-section .points-system table th,
+.rules-section .points-system table td {
+    text-align: left; /* Align text to the left within cells */
+    padding: 10px; /* Padding within cells */
+    border: 1px solid #ffffff; /* White border for cells */
+}
+
+.rules-section .points-system table th {
+    background-color: rgba(255, 165, 0, 0.7); /* Orange background for table headers */
+    color: #ffffff; /* White text for headers */
+}
+
+.rules-section .points-system table td {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background for cells */
+}
