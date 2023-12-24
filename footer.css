@@ -1,13 +1,20 @@
 /* Footer Styles */
 footer {
-    text-align: left; /* Centered footer text */
-    padding: 1rem;
-    background: rgba(0, 40, 0, 0.8); /* Consistency with header */
+    text-align: left; /* Centreert de footer text */
+    background: rgba(0, 40, 0, 0.8); /* Consistentie met de header */
     color: white;
     font-size: 0.9rem;
-    position: sticky; /* Changed to relative */
-    flex-shrink: 0;
+    position: sticky; /* Zorgt ervoor dat de footer onderaan blijft */
     bottom: 0;
-    width: 100%;
+    width: 100%;  
+    line-height: 1rem; /* Zorgt dat de tekst in het midden van de footer staat */
     margin-top: auto;
+}
+
+.footer-content, .footer-content p {
+    box-sizing: border-box; /* Padding en border worden binnen de hoogte ingesloten */
+    margin: 0; /* Verwijdert standaard margin */
+    padding: 0.5rem; /* Geen padding om binnen de 20px hoogte te blijven */
+    height: 100%; /* Neemt de hoogte van de ouder (footer) over */
+    overflow: hidden; /* Voorkomt dat inhoud buiten de footer valt */
 }
