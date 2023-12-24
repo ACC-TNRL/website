@@ -11,7 +11,10 @@
         <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 768px)">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="nav.pills.css">
         <!-- Include Bootstrap JS and its dependencies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>        
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -25,7 +28,10 @@
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
-
+                <div class="logo-container">
+                    <img src="logo_round.png" alt="Logo" class="logo_round">
+                    <h1 class="logo-text">The official TNRL website</h1>
+                </div>
             <ul class="desktop-menu">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
@@ -89,21 +95,35 @@
             <!-- Tab navigation -->
             <ul class="nav nav-pills mb-3 justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="sprint-tab" data-toggle="tab" href="#sprint" role="tab" aria-controls="sprint" aria-selected="true">Sprint Races</a>
+                    <a class="nav-link" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="false">General Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active custom-active" id="sprint-tab" data-toggle="tab" href="#sprint" role="tab" aria-controls="sprint" aria-selected="true">Sprint Races</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="endurance-tab" data-toggle="tab" href="#endurance" role="tab" aria-controls="endurance" aria-selected="false">Endurance Races</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="false">General Rules</a>
                 </li>
             </ul>
     
             <!-- Tab content -->
             <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade" id="general" role="tabpanel" aria-labelledby="general-tab">
+                    <div class="tab-container">
+                        <h3>General Rules</h3>
+                        <div class="container rules-text">
+                            <p>Qualifying sessions will start at 19:45 UK / 20:45 CET</p>
+                            <p>Servers will be reset at approximately 19:00 UK / 20:00 CET for free practice.</p>
+                            <p>Each track we visit is a round. Points will be scored for each race at each round. I.E. Sprint round is 25 points to each overall race winner and so on based on finishing position.</p>
+                            <p>Changes in car will result in loss of all championship points gained up to the change in car, for both individual and teams championship</p>
+                            <p>Use realistic names instead of nicknames or usernames in our league. This will make the experience more authentic and enjoyable</p>
+                            <p>A driver must finish the race to be awarded points.</p>
+                            <p>A driver must be signed up to the championship to earn points</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="tab-pane fade show active" id="sprint" role="tabpanel" aria-labelledby="sprint-tab">
                     <div class="tab-container">
-                        <h3>Sprint Round:</h3>
+                        <h3>Sprint Races</h3>
                         <div class="container rules-text">
                             <p>Qualifying will run for 5 minutes.</p>
                             <p>Each race will have its own qualifying.</p>
@@ -168,7 +188,7 @@
                 </div>
                 <div class="tab-pane fade" id="endurance" role="tabpanel" aria-labelledby="endurance-tab">
                     <div class="tab-container">
-                        <h3>Endurance:</h3>
+                        <h3>Endurance Races</h3>
                         <div class="container rules-text">
                             <p>Qualifying will run for 10 minutes.</p>
                             <p>Each round will have a single 75-minute race.</p>
@@ -228,20 +248,6 @@
                                 </tr>
                             </table>
                         </section>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="general" role="tabpanel" aria-labelledby="general-tab">
-                    <div class="tab-container">
-                        <h3>General Rules:</h3>
-                        <div class="container rules-text">
-                            <p>Qualifying sessions will start at 19:45 UK / 20:45 CET</p>
-                            <p>Servers will be reset at approximately 19:00 UK / 20:00 CET for free practice.</p>
-                            <p>Each track we visit is a round. Points will be scored for each race at each round. I.E. Sprint round is 25 points to each overall race winner and so on based on finishing position.</p>
-                            <p>Changes in car will result in loss of all championship points gained up to the change in car, for both individual and teams championship</p>
-                            <p>Use realistic names instead of nicknames or usernames in our league. This will make the experience more authentic and enjoyable</p>
-                            <p>A driver must finish the race to be awarded points.</p>
-                            <p>A driver must be signed up to the championship to earn points</p>
-                        </div>
                     </div>
                 </div>
             </div>

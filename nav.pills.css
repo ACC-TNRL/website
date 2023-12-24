@@ -1,0 +1,14 @@
+.nav-pills .nav-link {
+    background-color: #002800; /* Verander de achtergrondkleur */
+    color: #ffffff; /* Verander de tekstkleur */
+}
+
+.nav-pills > .nav-link.custom-active, .nav-pills .show > .nav-link.custom-active {
+    background-color: #FFA500 !important; /* Oranje kleur voor de actieve tab */
+    color: #000000 !important; /* Zwarte tekst voor betere leesbaarheid */
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #FF4500; /* Verander de achtergrondkleur bij hover */
+    color: #ffffff; /* Verander de tekstkleur bij hover */
+}

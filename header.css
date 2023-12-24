@@ -157,3 +157,18 @@ nav ul.desktop-menu li a:hover {
 .social-icons a.youtube:hover {
     background-color: #FF0000; /* YouTube rood bij hover */
 }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo_round {
+    height: 50px; /* Pas dit aan naar de gewenste grootte */
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: white; /* Pas dit aan naar de gewenste kleur */
+    font-size: 1.2rem; /* Pas dit aan naar de gewenste grootte */
+}

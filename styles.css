@@ -246,7 +246,7 @@ main h1 {
 
 .table-rules th,
 .table-rules td {
-    padding: 5px; /* Increased padding */
+    padding: 2px; /* Increased padding */
     text-align: center; /* Center align text */
     border: 1px solid #ddd;
 }
