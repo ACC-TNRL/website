@@ -27,3 +27,17 @@ $(document).ready(function() {
         });
     });
 });
+
+$('.dropdown-menu .dropdown-item').on('show.bs.tab', function (e) {
+    // Verwijder de actieve stijlen van alle tabs
+    $('.dropdown-menu .dropdown-item').removeClass('active').css({
+      'background-color': '',
+      'color': ''
+    });
+  
+    // Voeg de actieve stijl toe aan de huidige tab
+    $(e.target).addClass('active').css({
+      'background-color': '#FFA500',
+      'color': '#000000'
+    });
+  });

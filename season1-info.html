@@ -89,13 +89,13 @@
         <!-- De eerste set tabs voor 'Standings' en 'Driver Stats' -->
         <ul class="nav nav-pills mb-3 justify-content-center" id="mainTab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="standings-tab" data-toggle="tab" href="#standings" role="tab" aria-controls="standings" aria-selected="true">Standings</a>
+                <a class="nav-link1 active" id="standings-tab" data-toggle="tab" href="#standings" role="tab" aria-controls="standings" aria-selected="true">Standings</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="driver-stats-tab" data-toggle="tab" href="#driver-stats" role="tab" aria-controls="driver-stats" aria-selected="false">Driver Stats</a>
+                <a class="nav-link1" id="driver-stats-tab" data-toggle="tab" href="#driver-stats" role="tab" aria-controls="driver-stats" aria-selected="false">Driver Stats</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="races-tab" data-toggle="tab" href="#races" role="tab" aria-controls="races" aria-selected="false">Races</a>
+                <a class="nav-link1" id="races-tab" data-toggle="tab" href="#races" role="tab" aria-controls="races" aria-selected="false">Races</a>
             </li>
         </ul>
     
@@ -139,7 +139,17 @@
             </li>
             <!-- Voeg hier de overige circuits toe -->
         </ul>
-    
+        <div class="dropdown">
+            <button class="secondary-dropdown" type="button" id="raceDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Race Results
+            </button>
+            <div class="dropdown-menu" aria-labelledby="raceDropdown">
+                <a class="dropdown-item" data-toggle="tab" href="#brands-hatch-race-results">Race Results</a>
+                <a class="dropdown-item" data-toggle="tab" href="#brands-hatch-qualifying-results">Qualifying Results</a>
+                <a class="dropdown-item" data-toggle="tab" href="#brands-hatch-pace-rating">Pace Rating</a>
+                <a class="dropdown-item" data-toggle="tab" href="#brands-hatch-consistency-rating">Consistency Rating</a>
+            </div>
+        </div>
 <!-- De inhoud voor de tweede set tabs -->
 <div class="tab-content" id="circuitTabContent">
     <div class="tab-pane fade show active" id="imola" role="tabpanel" aria-labelledby="imola-tab">
@@ -161,27 +171,25 @@
         <!-- Inhoud voor 'Suzuka' -->
     </div>
     <div class="tab-pane fade" id="brands-hatch" role="tabpanel" aria-labelledby="brands-hatch-tab">
-        <section id="race-section" class="race-section">
-            <div class="container">
-                <div class="race-item">
-                    <h2>Race results</h2>
-                  <img src="tnrl_season1_07_unitedkingdom_race_2.png" alt="Nieuws Afbeelding" class="race-image">
-                   </div>
-                <div class="race-item">
-                    <h2>Qualifying results</h2>
-                  <img src="tnrl_season1_07_unitedkingdom_qualification_2.png" alt="Nieuws Afbeelding" class="race-image">
-                   </div>
-                <div class="race-item">
-                    <h2>Pace rating</h2>
-                  <img src="tnrl_season1_07_unitedkingdom_pure_race_pace_2.png" alt="Nieuws Afbeelding" class="race-image">
-                   </div>        
-                   <h2>Consistency rating</h2>
-                   <img src="tnrl_season1_07_unitedkingdom_constistancy_rating_2.png" alt="Nieuws Afbeelding" class="race-image">
-                    </div>                                  
-                </h2>
-               </div>
-          </div>
-        </section>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="brands-hatch-race-results">
+                <h2>Race results</h2>
+                <img src="tnrl_season1_07_unitedkingdom_race_2.png" alt="Nieuws Afbeelding" class="race-image">
+            </div>
+            <div class="tab-pane fade" id="brands-hatch-qualifying-results">
+                <h2>Qualifying results</h2>
+                <img src="tnrl_season1_07_unitedkingdom_qualification_2.png" alt="Nieuws Afbeelding" class="race-image">
+            </div>
+            <div class="tab-pane fade" id="brands-hatch-pace-rating">
+                <h2>Pace rating</h2>
+                <img src="tnrl_season1_07_unitedkingdom_pure_race_pace_2.png" alt="Nieuws Afbeelding" class="race-image">
+            </div>
+            <div class="tab-pane fade" id="brands-hatch-consistency-rating">
+                <h2>Consistency rating</h2>
+                <img src="tnrl_season1_07_unitedkingdom_constistancy_rating_2.png" alt="Nieuws Afbeelding" class="race-image">
+            </div>
+        </div>
+    </div>
     </div>
     <div class="tab-pane fade" id="spa-francorchamps" role="tabpanel" aria-labelledby="spa-francorchamps-tab">
         <!-- Inhoud voor 'Spa-Francorchamps' -->

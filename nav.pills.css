@@ -3,16 +3,26 @@
     color: #ffffff; /* Verander de tekstkleur */
 }
 
-.nav-pills .nav-link2 {
-    background-color: #bebebe; /* Verander de achtergrondkleur */
-    color: #000000; /* Verander de tekstkleur */
+.nav-pills .nav-link1 {
+    background-color: #002800; /* Een lichte grijze achtergrond */
+    color: #ffffff; /* Donkergrijze tekst voor leesbaarheid */
     display: block;
     padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    border: #000000;
-    border-width: 1px;
-    border-style: outset;
+    border-radius: 0.25rem; /* Afgeronde hoeken */
+    border: 1px solid #cccccc; /* Een subtiele border */
     margin: 0.1rem;
+    transition: all 0.3s ease; /* Gladde overgang voor hover effecten */
+}
+
+.nav-pills .nav-link2 {
+    background-color: #dddddd; /* Een lichte grijze achtergrond */
+    color: #333333; /* Donkergrijze tekst voor leesbaarheid */
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem; /* Afgeronde hoeken */
+    border: 1px solid #cccccc; /* Een subtiele border */
+    margin: 0.1rem;
+    transition: all 0.3s ease; /* Gladde overgang voor hover effecten */
 }
 
 .nav-pills > .nav-link.custom-active, .nav-pills .show > .nav-link.custom-active {
@@ -49,8 +59,25 @@
     color: #ffffff; /* Verander de tekstkleur bij hover */
 }
 
+.nav-pills .nav-link1:hover {
+    background-color: #FF4500; /* Verander de achtergrondkleur bij hover */
+    color: #ffffff; /* Verander de tekstkleur bij hover */
+    text-decoration: none;
+}
+
 .nav-pills .nav-link2:hover {
     background-color: #FF4500; /* Verander de achtergrondkleur bij hover */
     color: #ffffff; /* Verander de tekstkleur bij hover */
     text-decoration: none;
+}
+
+/* Zorg ervoor dat de stijlen worden verwijderd wanneer een item niet langer actief is */
+.dropdown-menu .dropdown-item {
+    background-color: transparent; /* Geen achtergrond */
+    color: inherit; /* Erf de standaard tekstkleur */
+}
+
+.dropdown-menu .dropdown-item.active, .dropdown-menu .dropdown-item:active {
+    background-color: #12694c !important; /* Oranje achtergrond */
+    color: #000000 !important; /* Zwarte tekst */
 }
