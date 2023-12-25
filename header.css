@@ -43,8 +43,9 @@ ul.desktop-menu {
     list-style-type: none; /* Verwijdert bullets van lijstitems */
     margin: 0; /* Verwijdert de standaard marge */
     padding: 0; /* Verwijdert de standaard padding */
+    padding-left: 5rem;
     display: flex; /* Maakt het een flex container */
-    justify-content: center; /* Centreert de items horizontaal */
+    justify-content: flex-start; /* Centreert de items horizontaal */
     align-items: center; /* Centreert de items verticaal */
     height: 24px; /* Hoogte van de menubalk */
   }

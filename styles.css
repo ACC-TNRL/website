@@ -116,24 +116,33 @@ main h1 {
 
 /* Season Section Styles */
 /* Container for the seasons area */
-.container {
-    max-width: 250px; /* Adjust the max-width as necessary */
+section#seasons.seasons-section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container-seasons {
+    width: 100%;
     margin: 0 auto; /* Centers the container */
+    display: flex;
     padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Individual season cards */
 .season-card {
     display: flex; /* Allows for flexible layouts inside the card */
     flex-direction: column; /* Stacks items vertically */
-    max-width: 100%; /* Ensures the card is not wider than its container */
+    max-width: 15%; /* Ensures the card is not wider than its container */
     margin-bottom: 20px; /* Spacing between cards */
 }
 
 /* The image within the card */
 .season-image {
     max-width: 100%; /* Makes image responsive */
-    height: auto; /* Keeps image aspect ratio */
+    height: 3rem; /* Keeps image aspect ratio */
 }
 
 /* The content within the card */
