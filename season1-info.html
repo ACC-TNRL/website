@@ -1,0 +1,207 @@
+<!-- rules-pc.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thursday Night Racing League</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="nav.pills.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="footer.css">
+        <!-- Include Bootstrap JS and its dependencies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+
+<body>
+    <header>
+        <nav>
+            <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+                <div class="logo-container">
+                    <img src="logo_round.png" alt="Logo" class="logo_round">
+                    <h1 class="logo-text">The official TNRL website</h1>
+                </div>
+            <ul class="desktop-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#league" class="dropbtn">TNRL League</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-submenu">
+                            <a href="#ps4">PS4</a>
+                            <div class="dropdown-content-sub">
+                                <a href="rules-ps4.html">Rules</a>
+                                <a href="#seasons-ps4">Seasons</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-submenu">
+                            <a href="#ps5">PS5</a>
+                            <div class="dropdown-content-sub">
+                                <a href="#rules-ps5.html">Rules</a>
+                                <a href="#seasons-ps5">Seasons</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-submenu">
+                            <a href="#pc">PC</a>
+                            <div class="dropdown-content-sub">
+                                <a href="rules-pc.html">Rules</a>
+                                <a href="seasons-pc.html">Seasons</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.paypal.com/donate/?hosted_button_id=73AQGHK9947NC" target="_blank">Donate</a></li>
+            </ul>
+
+            <div class="social-icons">
+                <a href="https://discord.gg/BfQFWw6uNQ" target="_blank" class="discord"><i class="fab fa-discord"></i></a>
+                <a href="https://www.youtube.com/channel/UCY-q-GOro_fErpo4hQVC7gQ" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <!-- Mobiel menu toegevoegd -->
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#league" class="dropbtn">TNRL League</a>
+                        <!-- Dropdown inhoud hier -->
+                    </li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.paypal.com/donate/?hosted_button_id=73AQGHK9947NC" target="_blank">Donate</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- De eerste set tabs voor 'Standings' en 'Driver Stats' -->
+        <ul class="nav nav-pills mb-3 justify-content-center" id="mainTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="standings-tab" data-toggle="tab" href="#standings" role="tab" aria-controls="standings" aria-selected="true">Standings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="driver-stats-tab" data-toggle="tab" href="#driver-stats" role="tab" aria-controls="driver-stats" aria-selected="false">Driver Stats</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="races-tab" data-toggle="tab" href="#races" role="tab" aria-controls="races" aria-selected="false">Races</a>
+            </li>
+        </ul>
+    
+        <!-- De inhoud voor de eerste set tabs -->
+        <div class="tab-content" id="mainTabContent">
+            <div class="tab-pane fade show active" id="standings" role="tabpanel" aria-labelledby="standings-tab">
+                <section id="standings" class="standings-section">
+                    <h1>Standings season 1</h1>
+                    <img src="tnrl_season1_driver_standings.png" alt="Standings season 1" class="standings"> <!-- Logo added here -->
+                    </section>
+            </div>
+            <div class="tab-pane fade" id="driver-stats" role="tabpanel" aria-labelledby="driver-stats-tab">
+                <!-- Inhoud voor 'Driver Stats' -->
+            </div>
+            <div class="tab-pane fade" id="races" role="tabpanel" aria-labelledby="races-tab">
+                        <!-- De tweede set tabs voor de circuits -->
+        <ul class="nav nav-pills mb-3 justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link2" id="imola-tab" data-toggle="tab" href="#imola" role="tab" aria-controls="imola" aria-selected="false">Imola</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link2" id="barcelona-tab" data-toggle="tab" href="#barcelona" role="tab" aria-controls="barcelona" aria-selected="false">Barcelona</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link2" id="mount-panorama-tab" data-toggle="tab" href="#mount-panorama" role="tab" aria-controls="mount-panorama" aria-selected="false">Mount Panorama</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link2" id="paul-ricard-tab" data-toggle="tab" href="#paul-ricard" role="tab" aria-controls="paul-ricard" aria-selected="false">Paul Ricard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link2" id="kyalami-tab" data-toggle="tab" href="#kyalami" role="tab" aria-controls="kyalami" aria-selected="false">Kyalami</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link2" id="suzuka-tab" data-toggle="tab" href="#suzuka" role="tab" aria-controls="suzuka" aria-selected="false">Suzuka</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link2" id="brands-hatch-tab" data-toggle="tab" href="#brands-hatch" role="tab" aria-controls="brands-hatch" aria-selected="false">Brands Hatch</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link2" id="spa-francorchamps-tab" data-toggle="tab" href="#spa-francorchamps" role="tab" aria-controls="spa-francorchamps" aria-selected="false">Spa-Francorchamps</a>
+            </li>
+            <!-- Voeg hier de overige circuits toe -->
+        </ul>
+    
+<!-- De inhoud voor de tweede set tabs -->
+<div class="tab-content" id="circuitTabContent">
+    <div class="tab-pane fade show active" id="imola" role="tabpanel" aria-labelledby="imola-tab">
+        <!-- Inhoud voor 'Imola' -->
+    </div>
+    <div class="tab-pane fade" id="barcelona" role="tabpanel" aria-labelledby="barcelona-tab">
+        <!-- Inhoud voor 'Barcelona' -->
+    </div>
+    <div class="tab-pane fade" id="mount-panorama" role="tabpanel" aria-labelledby="mount-panorama-tab">
+        <!-- Inhoud voor 'Mount Panorama' -->
+    </div>
+    <div class="tab-pane fade" id="paul-ricard" role="tabpanel" aria-labelledby="paul-ricard-tab">
+        <!-- Inhoud voor 'Paul Ricard' -->
+    </div>
+    <div class="tab-pane fade" id="kyalami" role="tabpanel" aria-labelledby="kyalami-tab">
+        <!-- Inhoud voor 'Kyalami' -->
+    </div>
+    <div class="tab-pane fade" id="suzuka" role="tabpanel" aria-labelledby="suzuka-tab">
+        <!-- Inhoud voor 'Suzuka' -->
+    </div>
+    <div class="tab-pane fade" id="brands-hatch" role="tabpanel" aria-labelledby="brands-hatch-tab">
+        <section id="race-section" class="race-section">
+            <div class="container">
+                <div class="race-item">
+                    <h2>Race results</h2>
+                  <img src="tnrl_season1_07_unitedkingdom_race_2.png" alt="Nieuws Afbeelding" class="race-image">
+                   </div>
+                <div class="race-item">
+                    <h2>Qualifying results</h2>
+                  <img src="tnrl_season1_07_unitedkingdom_qualification_2.png" alt="Nieuws Afbeelding" class="race-image">
+                   </div>
+                <div class="race-item">
+                    <h2>Pace rating</h2>
+                  <img src="tnrl_season1_07_unitedkingdom_pure_race_pace_2.png" alt="Nieuws Afbeelding" class="race-image">
+                   </div>        
+                   <h2>Consistency rating</h2>
+                   <img src="tnrl_season1_07_unitedkingdom_constistancy_rating_2.png" alt="Nieuws Afbeelding" class="race-image">
+                    </div>                                  
+                </h2>
+               </div>
+          </div>
+        </section>
+    </div>
+    <div class="tab-pane fade" id="spa-francorchamps" role="tabpanel" aria-labelledby="spa-francorchamps-tab">
+        <!-- Inhoud voor 'Spa-Francorchamps' -->
+    </div>
+    <!-- Voeg hier de overige circuits toe -->
+</div>
+    
+
+    </main>  
+    
+      
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Thursday Night Racing League</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+

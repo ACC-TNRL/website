@@ -164,6 +164,43 @@ section#seasons.seasons-section{
     cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
+
+/* Rules Standings Styles*/
+section#standings.standings-section {
+    max-width: 80%;
+    justify-content: center;
+}
+
+div#standings.tab-pane.fade.show.active {
+    justify-content: flex-start;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+img.standings {
+    max-width: 50%;
+}
+
+/* Race Report Styles */
+.race-section {
+    background: rgba(12, 12, 12, 0.8); /* Donkere achtergrond met een opacity van 0.8 */
+    color: #ffffff; /* Witte tekst voor leesbaarheid */
+    margin-top: 75px;
+    padding: 40px 0; /* Verticale padding boven, horizontale padding rechts en links, verticale padding onder */
+}
+
+.race-item {
+    max-width: 100%;
+    padding: 2rem 1rem;
+}
+
+.race-image {
+    max-width: 75%;
+}
+
 /* Rules Section Styles */
 .rules-section {
     background: rgba(12, 12, 12, 0.8); /* Consistent with the news section style */
