@@ -5,82 +5,87 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Thursday Night Racing League</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-        <link rel="stylesheet" href="nav.pills.css">
-        <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 768px)">
-        <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="header.css">
-
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="nav.pills.css">
+        <!-- Include Bootstrap JS and its dependencies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
 
-    <body>
-        <header>
-            <nav>
-                <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
+<body>
+    <header>
+        <nav>
+            <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
                 <div class="logo-container">
                     <img src="logo_round.png" alt="Logo" class="logo_round">
                     <h1 class="logo-text">The official TNRL website</h1>
                 </div>
-                <ul class="desktop-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#league" class="dropbtn">TNRL League</a>
-                        <div class="dropdown-content">
-                            <div class="dropdown-submenu">
-                                <a href="#ps4">PS4</a>
-                                <div class="dropdown-content-sub">
-                                    <a href="rules-ps4.html">Rules</a>
-                                    <a href="#seasons-ps4">Seasons</a>
-                                </div>
-                            </div>
-                            <div class="dropdown-submenu">
-                                <a href="#ps5">PS5</a>
-                                <div class="dropdown-content-sub">
-                                    <a href="#rules-ps5.html">Rules</a>
-                                    <a href="#seasons-ps5">Seasons</a>
-                                </div>
-                            </div>
-                            <div class="dropdown-submenu">
-                                <a href="#pc">PC</a>
-                                <div class="dropdown-content-sub">
-                                    <a href="rules-pc.html">Rules</a>
-                                    <a href="seasons-pc.html">Seasons</a>
-                                </div>
+            <ul class="desktop-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#league" class="dropbtn">TNRL League</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-submenu">
+                            <a href="#ps4">PS4</a>
+                            <div class="dropdown-content-sub">
+                                <a href="rules-ps4.html">Rules</a>
+                                <a href="#seasons-ps4">Seasons</a>
                             </div>
                         </div>
+                        <div class="dropdown-submenu">
+                            <a href="#ps5">PS5</a>
+                            <div class="dropdown-content-sub">
+                                <a href="#rules-ps5.html">Rules</a>
+                                <a href="#seasons-ps5">Seasons</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-submenu">
+                            <a href="#pc">PC</a>
+                            <div class="dropdown-content-sub">
+                                <a href="rules-pc.html">Rules</a>
+                                <a href="seasons-pc.html">Seasons</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.paypal.com/donate/?hosted_button_id=73AQGHK9947NC" target="_blank">Donate</a></li>
+            </ul>
+
+            <div class="social-icons">
+                <a href="https://discord.gg/BfQFWw6uNQ" target="_blank" class="discord"><i class="fab fa-discord"></i></a>
+                <a href="https://www.youtube.com/channel/UCY-q-GOro_fErpo4hQVC7gQ" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <!-- Mobiel menu toegevoegd -->
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#league" class="dropbtn">TNRL League</a>
+                        <!-- Dropdown inhoud hier -->
                     </li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="https://www.paypal.com/donate/?hosted_button_id=73AQGHK9947NC" target="_blank">Donate</a></li>
                 </ul>
-    
-                <div class="social-icons">
-                    <a href="https://discord.gg/BfQFWw6uNQ" target="_blank" class="discord"><i class="fab fa-discord"></i></a>
-                    <a href="https://www.youtube.com/channel/UCY-q-GOro_fErpo4hQVC7gQ" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
-                </div>
-    
-                <!-- Mobiel menu toegevoegd -->
-                <div class="mobile-menu">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#league" class="dropbtn">TNRL League</a>
-                            <!-- Dropdown inhoud hier -->
-                        </li>
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="https://www.paypal.com/donate/?hosted_button_id=73AQGHK9947NC" target="_blank">Donate</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <main>
+            </div>
+        </nav>
+    </header>
+    <main>
         <section id="home" class="welcome-section">
             <h1>Rules PC</h1>
             <img src="logo.png" alt="Thursday Night Racing League Logo" class="logo"> <!-- Logo added here -->
@@ -90,10 +95,10 @@
             <!-- Tab navigation -->
             <ul class="nav nav-pills mb-3 justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active custom-active" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General Rules</a>
+                    <a class="nav-link" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="false">General Rules</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="sprint-tab" data-toggle="tab" href="#sprint" role="tab" aria-controls="sprint" aria-selected="false">Sprint Races</a>
+                    <a class="nav-link active custom-active" id="sprint-tab" data-toggle="tab" href="#sprint" role="tab" aria-controls="sprint" aria-selected="true">Sprint Races</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="endurance-tab" data-toggle="tab" href="#endurance" role="tab" aria-controls="endurance" aria-selected="false">Endurance Races</a>
@@ -102,7 +107,7 @@
     
             <!-- Tab content -->
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                <div class="tab-pane fade" id="general" role="tabpanel" aria-labelledby="general-tab">
                     <div class="tab-container">
                         <h3>General Rules</h3>
                         <div class="container rules-text">
@@ -116,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="sprint" role="tabpanel" aria-labelledby="sprint-tab">
+                <div class="tab-pane fade show active" id="sprint" role="tabpanel" aria-labelledby="sprint-tab">
                     <div class="tab-container">
                         <h3>Sprint Races</h3>
                         <div class="container rules-text">
@@ -255,12 +260,7 @@
         </div>
     </footer>
 
-        <!-- Include Bootstrap JS and its dependencies -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="scripts.js"></script>        
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
 

@@ -1,16 +1,7 @@
 /* Header and Navigation Styles */
 header {
     background: rgba(0, 40, 0, 0.8); /* More opaque for better readability */
-    padding: 1rem; /* Adds padding on the sides */
-    line-height: 1rem; /* Zorgt dat de tekst in het midden van de footer staat */
-    text-align: center; /* Centreert de footer text */
-    color: white;
-    font-size: 0.9rem;
-    position: sticky; /* Zorgt ervoor dat de footer onderaan blijft */
-    bottom: 0;
-    width: 100%;  
-    line-height: 1rem; /* Zorgt dat de tekst in het midden van de footer staat */
-    margin-top: auto;
+    padding: 0.5rem; /* Adds padding on the sides */
 }
 
 header nav {
@@ -18,12 +9,6 @@ header nav {
     justify-content: space-between; /* Spaces nav-items and social icons */
     align-items: center; /* Vertically centers items */
     height: 100%; /* Ensures the nav takes the full height of the header */
-    box-sizing: border-box; /* Padding en border worden binnen de hoogte ingesloten */
-    margin: 0; /* Verwijdert standaard margin */
-    padding: 0.5rem; /* Geen padding om binnen de 20px hoogte te blijven */
-    overflow: hidden; /* Voorkomt dat inhoud buiten de footer valt */
-    font-weight: normal;
-    line-height: 16px;
 }
 
 /* Verberg het standaardmenu en toon het hamburgermenu op mobiele apparaten */
@@ -44,13 +29,25 @@ header nav {
 
 nav ul {
     list-style-type: none;
-    display: flex;
-    justify-content: flex-start; /* Centers the nav-items */
-    margin-left: 23%;
+    display: -webkit-box;
+    margin-left: 1rem;
+    margin-top: 12px;
+    justify-content: center; /* Centers the nav-items */
     flex: 1; /* Allows nav-items to grow and fill the space */
     align-items: center; /* Vertically centers the nav-items */
-    margin-bottom: 0.5rem
+    padding: 0;
+    line-height: 1.0;
 }
+
+ul.desktop-menu {
+    list-style-type: none; /* Verwijdert bullets van lijstitems */
+    margin: 0; /* Verwijdert de standaard marge */
+    padding: 0; /* Verwijdert de standaard padding */
+    display: flex; /* Maakt het een flex container */
+    justify-content: center; /* Centreert de items horizontaal */
+    align-items: center; /* Centreert de items verticaal */
+    height: 24px; /* Hoogte van de menubalk */
+  }
 
 nav .social-icons {
     display: flex;
@@ -178,18 +175,23 @@ nav ul.desktop-menu li a:hover {
 .logo-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 100%; /* Zorg ervoor dat de oudercontainer een gespecificeerde hoogte heeft */
+    /* Geen andere stijlen zijn hier nodig tenzij je specifieke padding of marges wilt */
 }
 
 .logo_round {
     height: 50px; /* Pas dit aan naar de gewenste grootte */
+    margin-right: 10px;
 }
 
 .logo-text {
-    color: white; /* Pas dit aan naar de gewenste kleur */
-    font-size: 1.2rem; /* Pas dit aan naar de gewenste grootte */
-    font-weight: 600;
-    font-weight: normal;
-    line-height: 16px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    color: white;
+    font-size: 1.2rem; /* Deze grootte kan worden overschreven door meer specifieke selectors */
+    display: flex;
+    justify-content: center;
+    /* align-items is hier niet nodig tenzij .logo-text zelf flex-items bevat */
+    /* Voeg eventueel padding toe om de tekst binnen zijn container te plaatsen */
+    padding: 0; /* Pas dit aan als er extra ruimte rond de tekst nodig is */
+    margin: 0; /* Zorg ervoor dat er geen standaardmarges zijn die het centreren beïnvloeden */
 }
