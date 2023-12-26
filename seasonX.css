@@ -1,0 +1,114 @@
+/* styles.css */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background Image Styles */
+html {
+    height: 100%; /* Nieuwe regel */
+}
+
+body {
+    display: flex; /* Maakt body een flex container */
+    flex-direction: column; /* Stelt de hoofdas van de flex container in als de verticale as */
+    min-height: 100%; /* Zorgt ervoor dat de body minstens de hoogte van de viewport heeft */
+    margin: 0; /* Reset standaardmarges */
+    background-color: #000; /* Fallback color */
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white; /* Default text color */
+}
+
+/* Main Welcome Message Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 0; /* Add padding to give some space around content */
+}
+
+main h1 {
+    font-size: 4rem; /* Larger font size for main heading */
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* More pronounced text shadow for legibility */
+}
+
+/* Rules Standings Styles*/
+section#standings.standings-section {
+    max-width: 80%;
+    justify-content: center;
+}
+
+div#standings.tab-pane.fade.show.active {
+    justify-content: flex-start;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+img.standings {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.secondary-dropdown {
+    background-color: #dddddd; /* Een lichte grijze achtergrond */
+    color: #333333; /* Donkergrijze tekst voor leesbaarheid */
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem; /* Afgeronde hoeken */
+    border: 1px solid #cccccc; /* Een subtiele border */
+    margin: 0.1rem;
+    font-weight: 400;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.secondary-dropdown::after {
+    content: "";
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+/* Race Report Styles */
+
+.race-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Rules Section Styles */
+
+/* Aanpassen voor betere leesbaarheid */
+.tab-content > .tab-pane {
+    margin-top: 20px; /* Voegt ruimte toe boven de tab content */
+}

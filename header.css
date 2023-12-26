@@ -67,6 +67,7 @@ nav li a {
 nav ul.desktop-menu li a:hover {
     background-color: #ff4500; /* Verandert de achtergrondkleur bij hover */
     color: #ffffff; /* Verandert de tekstkleur bij hover */
+    text-decoration: none;
 }
 
 /* Dropdown Menu Styles */

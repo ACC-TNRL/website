@@ -1,0 +1,116 @@
+/* styles.css */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background Image Styles */
+html {
+    height: 100%; /* Nieuwe regel */
+}
+
+body {
+    display: flex; /* Maakt body een flex container */
+    flex-direction: column; /* Stelt de hoofdas van de flex container in als de verticale as */
+    min-height: 100%; /* Zorgt ervoor dat de body minstens de hoogte van de viewport heeft */
+    margin: 0; /* Reset standaardmarges */
+    background-color: #000; /* Fallback color */
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white; /* Default text color */
+}
+
+/* Main Welcome Message Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 0; /* Add padding to give some space around content */
+}
+
+main h1 {
+    font-size: 4rem; /* Larger font size for main heading */
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* More pronounced text shadow for legibility */
+}
+
+/* Logo Styles */
+.logo {
+    max-width: 200px; /* Slightly larger logo */
+    margin: 2rem auto; /* Center logo horizontally */
+    display: block; /* Ensures the logo is block-level for margin auto to work */
+    opacity: 0.9; /* Adjust opacity as needed */
+}
+
+/* News Section Styles */
+.news-section {
+    background: rgba(12, 12, 12, 0.8); /* Donkere achtergrond met een opacity van 0.8 */
+    color: #ffffff; /* Witte tekst voor leesbaarheid */
+    margin-top: 75px;
+    padding: 40px 0; /* Verticale padding boven, horizontale padding rechts en links, verticale padding onder */
+    border-radius: 10px;
+}
+
+.news-section .container {
+    max-width: 1200px; /* Maximale breedte van de content */
+    margin: 0 auto; /* Centreert de container */
+    padding: 0 15px; /* Padding aan de zijkanten */
+}
+
+.news-section h2 {
+    font-size: 2.5rem; /* Grotere lettergrootte voor titel */
+    margin-bottom: 30px; /* Ruimte onder de titel */
+    color: #FFA500; /* Oranje kleur voor de titel */
+    text-transform: uppercase; /* Maakt de tekst in hoofdletters */
+}
+
+.news-section .news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Ruimte tussen nieuwsitems */
+}
+
+.news-section .news-image {
+    flex-shrink: 0; /* Voorkomt dat de afbeelding krimpt */
+    margin-right: 20px; /* Ruimte tussen afbeelding en tekst */
+    width: 300px; /* Breedte van de nieuwsafbeelding */
+    height: 200px; /* Hoogte van de nieuwsafbeelding */
+    object-fit: cover; /* Zorgt dat de afbeelding de ruimte vult */
+    border-radius: 10px; /* Afgeronde hoeken voor de afbeelding */
+}
+
+.news-section .news-content {
+    flex: 1; /* Vult de overgebleven ruimte */
+}
+
+.news-section .news-content h3 {
+    font-size: 1.8rem; /* Lettergrootte voor nieuwsitem titel */
+    margin-bottom: 10px; /* Ruimte onder de titel */
+}
+
+.news-section .news-date {
+    font-size: 1rem; /* Lettergrootte voor de datum */
+    color: #CCCCCC; /* Lichtgrijze kleur voor de datum */
+    margin-bottom: 10px; /* Ruimte onder de datum */
+}
+
+.news-section .read-more {
+    font-weight: bold; /* Vetgedrukt voor de 'Lees meer' link */
+    color: #FFA500; /* Oranje kleur voor de 'Lees meer' link */
+    text-decoration: none; /* Geen onderstreping */
+    transition: color 0.3s; /* Overgangseffect voor hover */
+}
+
+.news-section .read-more:hover {
+    color: #ffffff; /* Witte kleur bij hover */
+}

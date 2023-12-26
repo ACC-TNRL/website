@@ -37,16 +37,14 @@
     list-style: none;
 }
 
-.nav-pills > .nav-link.custom-active, .nav-pills .show > .nav-link2.custom-active {
-    background-color: #FFA500 !important; /* Oranje kleur voor de actieve tab */
-    color: #000000 !important; /* Zwarte tekst voor betere leesbaarheid */
-    justify-content: center!important;
-    margin-bottom: 1rem!important;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
+.nav-pills .nav-link1.active {
+    color: #000000;
+    background-color: #FFA500;
+}
+
+.nav-pills .nav-link2.active {
+    color: #000000;
+    background-color: #FFA500;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link  {

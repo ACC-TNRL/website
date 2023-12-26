@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background Image Styles */
+html {
+    height: 100%; /* Nieuwe regel */
+}
+
+body {
+    display: flex; /* Maakt body een flex container */
+    flex-direction: column; /* Stelt de hoofdas van de flex container in als de verticale as */
+    min-height: 100%; /* Zorgt ervoor dat de body minstens de hoogte van de viewport heeft */
+    margin: 0; /* Reset standaardmarges */
+    background-color: #000; /* Fallback color */
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white; /* Default text color */
+}
+
+/* Main Welcome Message Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 0; /* Add padding to give some space around content */
+}
+
+main h1 {
+    font-size: 4rem; /* Larger font size for main heading */
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* More pronounced text shadow for legibility */
+}
+
+.points-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-rules th.position-header {
+    max-width: 25px;
+}
+
+/* Logo Styles */
+.logo {
+    max-width: 200px; /* Slightly larger logo */
+    margin: 2rem auto; /* Center logo horizontally */
+    display: block; /* Ensures the logo is block-level for margin auto to work */
+    opacity: 0.9; /* Adjust opacity as needed */
+}
+
+.container.rules-text  {
+    background: rgba(0, 0, 0, 0.8); /* Donkere semi-transparante achtergrond */
+    margin: 0;
+    border-radius: 8px;
+    padding: 0;
+}
+
+.container.rules-text ul {
+    padding-left: 20px;
+    list-style-position: inside;
+}
+
+.container.rules-text li {
+    padding: 0.5rem 1rem; /* Ruime padding rondom de tekst */
+    border-radius: 8px; /* Subtiele afgeronde hoeken */
+    margin: 1rem 0; /* Ruimte boven en onder de container */
+    line-height: 1.6; /* Verbeterde regelhoogte voor leesbaarheid */
+    text-align: left; /* Tekst links uitlijnen */
+
+}
+
+.tab-container {
+    background: rgba(0, 0, 0, 0.7); /* Donkere semi-transparante achtergrond */
+    border-radius: 10px; /* Afgeronde hoeken */
+    padding: 20px; /* Binnenruimte */
+    margin: 20px; /* Buitenruimte */
+    color: #ffffff; /* Witte tekst */
+    max-width: 50%;
+}
+
+/* Aanpassen voor betere leesbaarheid */
+.tab-content > .tab-pane {
+    margin-top: 20px; /* Voegt ruimte toe boven de tab content */
+}
+
+.tab-content>.active {
+    display: flex;
+    justify-content: center;
+    line-height: 1rem;
+}
+
+/* Rules-pc table rules */
+.table-rules {
+    background: rgba(0, 0, 0, 0.8); /* Donkere semi-transparante achtergrond */
+    padding: 1.5rem;
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds shadow for depth */
+}
+
+.table-rules th,
+.table-rules td {
+    padding: 2px; /* Increased padding */
+    text-align: center; /* Center align text */
+    border: 1px solid #ddd;
+}
+
+.table-rules th {
+    background-color: rgba(0, 40, 0, 1.0); /* A lighter color for readability */
+    color: white;
+}
+
+
+.table-rules td {
+    font-size: 1.1rem; /* Slightly larger font size */
+}
+
+@media (max-width: 768px) {
+    .table-rules, .table-rules th, .table-rules td {
+        font-size: 5vw; /* Responsive font size */
+    }
+}

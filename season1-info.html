@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 768px)">
         <link rel="stylesheet" href="nav.pills.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="seasonX.css">
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="footer.css">
         <!-- Include Bootstrap JS and its dependencies -->
@@ -40,15 +40,13 @@
                         <div class="dropdown-submenu">
                             <a href="#ps4">PS4</a>
                             <div class="dropdown-content-sub">
-                                <a href="rules-ps4.html">Rules</a>
-                                <a href="#seasons-ps4">Seasons</a>
+                                <a href="rules-ps4.html">TBD</a>
                             </div>
                         </div>
                         <div class="dropdown-submenu">
                             <a href="#ps5">PS5</a>
                             <div class="dropdown-content-sub">
-                                <a href="#rules-ps5.html">Rules</a>
-                                <a href="#seasons-ps5">Seasons</a>
+                                <a href="#rules-ps5.html">TBD</a>
                             </div>
                         </div>
                         <div class="dropdown-submenu">
@@ -112,30 +110,55 @@
             </div>
             <div class="tab-pane fade" id="races" role="tabpanel" aria-labelledby="races-tab">
                         <!-- De tweede set tabs voor de circuits -->
-        <ul class="nav nav-pills mb-3 justify-content-center" id="myTab" role="tablist">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="myTab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link2" id="imola-tab" data-toggle="tab" href="#imola" role="tab" aria-controls="imola" aria-selected="false">Imola</a>
+                <a class="nav-link2" id="imola-tab" data-toggle="tab" href="#imola" role="tab" aria-controls="imola" aria-selected="false">
+                    Imola
+                    <!--Heavy checkmark-->
+                    <span class="checkmark">✔</span>
+                </a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link2" id="barcelona-tab" data-toggle="tab" href="#barcelona" role="tab" aria-controls="barcelona" aria-selected="false">
+                    Barcelona
+                    <span class="checkmark">✔</span>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link2" id="barcelona-tab" data-toggle="tab" href="#barcelona" role="tab" aria-controls="barcelona" aria-selected="false">Barcelona</a>
+                <a class="nav-link2" id="mount-panorama-tab" data-toggle="tab" href="#mount-panorama" role="tab" aria-controls="mount-panorama" aria-selected="false">
+                    Mount Panorama
+                    <span class="checkmark">✔</span>    
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link2" id="mount-panorama-tab" data-toggle="tab" href="#mount-panorama" role="tab" aria-controls="mount-panorama" aria-selected="false">Mount Panorama</a>
+                <a class="nav-link2" id="paul-ricard-tab" data-toggle="tab" href="#paul-ricard" role="tab" aria-controls="paul-ricard" aria-selected="false">
+                    Paul Ricard
+                    <span class="checkmark">✔</span>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link2" id="paul-ricard-tab" data-toggle="tab" href="#paul-ricard" role="tab" aria-controls="paul-ricard" aria-selected="false">Paul Ricard</a>
+                <a class="nav-link2" id="kyalami-tab" data-toggle="tab" href="#kyalami" role="tab" aria-controls="kyalami" aria-selected="false">
+                    Kyalami
+                    <span class="checkmark">✔</span>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link2" id="kyalami-tab" data-toggle="tab" href="#kyalami" role="tab" aria-controls="kyalami" aria-selected="false">Kyalami</a>
+                <a class="nav-link2" id="suzuka-tab" data-toggle="tab" href="#suzuka" role="tab" aria-controls="suzuka" aria-selected="false">
+                    Suzuka
+                    <span class="checkmark">✔</span>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link2" id="suzuka-tab" data-toggle="tab" href="#suzuka" role="tab" aria-controls="suzuka" aria-selected="false">Suzuka</a>
+                <a class="nav-link2 active" id="brands-hatch-tab" data-toggle="tab" href="#brands-hatch" role="tab" aria-controls="brands-hatch" aria-selected="false">
+                    Brands Hatch
+                    <span class="checkmark">✔</span>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link2" id="brands-hatch-tab" data-toggle="tab" href="#brands-hatch" role="tab" aria-controls="brands-hatch" aria-selected="false">Brands Hatch</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link2" id="spa-francorchamps-tab" data-toggle="tab" href="#spa-francorchamps" role="tab" aria-controls="spa-francorchamps" aria-selected="false">Spa-Francorchamps</a>
+                <a class="nav-link2" id="spa-francorchamps-tab" data-toggle="tab" href="#spa-francorchamps" role="tab" aria-controls="spa-francorchamps" aria-selected="false">
+                    Spa-Francorchamps
+                    <span class="checkmark"></span>
+                </a>
             </li>
             <!-- Voeg hier de overige circuits toe -->
         </ul>
@@ -144,7 +167,7 @@
                 Race Results
             </button>
             <div class="dropdown-menu" aria-labelledby="raceDropdown">
-                <a class="dropdown-item" data-toggle="tab" href="#brands-hatch-race-results">Race Results</a>
+                <a class="dropdown-item active" data-toggle="tab" href="#brands-hatch-race-results">Race Results</a>
                 <a class="dropdown-item" data-toggle="tab" href="#brands-hatch-qualifying-results">Qualifying Results</a>
                 <a class="dropdown-item" data-toggle="tab" href="#brands-hatch-pace-rating">Pace Rating</a>
                 <a class="dropdown-item" data-toggle="tab" href="#brands-hatch-consistency-rating">Consistency Rating</a>
@@ -152,7 +175,7 @@
         </div>
 <!-- De inhoud voor de tweede set tabs -->
 <div class="tab-content" id="circuitTabContent">
-    <div class="tab-pane fade show active" id="imola" role="tabpanel" aria-labelledby="imola-tab">
+    <div class="tab-pane fade" id="imola" role="tabpanel" aria-labelledby="imola-tab">
         <!-- Inhoud voor 'Imola' -->
     </div>
     <div class="tab-pane fade" id="barcelona" role="tabpanel" aria-labelledby="barcelona-tab">
@@ -170,7 +193,7 @@
     <div class="tab-pane fade" id="suzuka" role="tabpanel" aria-labelledby="suzuka-tab">
         <!-- Inhoud voor 'Suzuka' -->
     </div>
-    <div class="tab-pane fade" id="brands-hatch" role="tabpanel" aria-labelledby="brands-hatch-tab">
+    <div class="tab-pane fade show active" id="brands-hatch" role="tabpanel" aria-labelledby="brands-hatch-tab">
         <div class="tab-content">
             <div class="tab-pane fade show active" id="brands-hatch-race-results">
                 <h2>Race results</h2>

@@ -41,3 +41,10 @@ $('.dropdown-menu .dropdown-item').on('show.bs.tab', function (e) {
       'color': '#000000'
     });
   });
+
+  $(document).ready(function(){
+    $(".dropdown-menu a").click(function(){
+        var selectedText = $(this).text();
+        $("#raceDropdown").text(selectedText);
+    });
+});
