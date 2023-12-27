@@ -75,7 +75,13 @@
     color: inherit; /* Erf de standaard tekstkleur */
 }
 
+.dropdown-menu .dropdown-item:hover {
+    background-color: #FF4500; /* Verander de achtergrondkleur bij hover */
+    color: #ffffff; /* Verander de tekstkleur bij hover */
+    text-decoration: none;
+}
+
 .dropdown-menu .dropdown-item.active, .dropdown-menu .dropdown-item:active {
     background-color: #12694c !important; /* Oranje achtergrond */
-    color: #000000 !important; /* Zwarte tekst */
+    color: #ffffff !important; /* Zwarte tekst */
 }
