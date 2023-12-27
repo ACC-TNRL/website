@@ -1,0 +1,115 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thursday Night Racing League</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="nav.pills.css">
+        <link rel="stylesheet" href="generic.css">        
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="footer.css">
+        <!-- Include Bootstrap JS and its dependencies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+
+<body>
+    <header>
+        <nav>
+            <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+                <div class="logo-container">
+                    <img src="logo_round.png" alt="Logo" class="logo_round">
+                    <h1 class="logo-text">The official TNRL website</h1>
+                </div>
+            <ul class="desktop-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#league" class="dropbtn">TNRL League</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-submenu">
+                            <a href="#ps4">PS4</a>
+                            <div class="dropdown-content-sub">
+                                <a href="rules-ps4.html">TBD</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-submenu">
+                            <a href="#ps5">PS5</a>
+                            <div class="dropdown-content-sub">
+                                <a href="#rules-ps5.html">TBD</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-submenu">
+                            <a href="#pc">PC</a>
+                            <div class="dropdown-content-sub">
+                                <a href="rules-pc.html">Rules</a>
+                                <a href="seasons-pc.html">Seasons</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.paypal.com/donate/?hosted_button_id=73AQGHK9947NC" target="_blank">Donate</a></li>
+            </ul>
+
+            <div class="social-icons">
+                <a href="https://discord.gg/BfQFWw6uNQ" target="_blank" class="discord"><i class="fab fa-discord"></i></a>
+                <a href="https://www.youtube.com/channel/UCY-q-GOro_fErpo4hQVC7gQ" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <!-- Mobiel menu toegevoegd -->
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#league" class="dropbtn">TNRL League</a>
+                        <!-- Dropdown inhoud hier -->
+                    </li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.paypal.com/donate/?hosted_button_id=73AQGHK9947NC" target="_blank">Donate</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="welcome-section">
+            <h1>Contact</h1>
+        </section>
+<!-- Contact Section -->
+<section id="discord-widget" class="discord-section">
+    <div class="container">
+        <h2>Join us on Discord</h2>
+        <iframe src="https://discord.com/widget?id=751197611641405490&theme=dark" 
+        width="350" 
+        height="500" 
+        allowtransparency="true" 
+        frameborder="0" 
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+</iframe>
+    </div>
+</section>
+    </main>    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Thursday Night Racing League</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

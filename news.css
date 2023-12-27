@@ -1,0 +1,108 @@
+/* Algemene stijlen voor de nieuwssectie */
+.news-section .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.news-section h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+/* Stijlen voor individuele nieuwsitems */
+.news-item {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px; /* Voeg je border-radius toe */
+    overflow: hidden; /* Voeg deze regel toe */
+}
+
+/* Container voor de afbeelding */
+.news-image-container {
+    flex-basis: 50%; /* Gebruik flex-basis om de basisgrootte in te stellen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Stijlen voor de afbeelding zelf */
+.news-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Stijlen voor de inhoud naast de afbeelding */
+.news-content {
+    flex-basis: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.news-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-content .news-date {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.news-content p {
+    margin-bottom: 1rem;
+}
+
+.news-content .read-more {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-content .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Hover effect voor het hele nieuwsitem */
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-tags {
+    display: flex;
+    gap: 0.5rem; /* Voegt ruimte toe tussen de tags */
+    margin-bottom: 1rem; /* Ruimte onder de tags */
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    border-radius: 15px; /* Afgeronde hoeken voor de tags */
+    color: #fff;
+    background-color: #666; /* Standaard achtergrondkleur voor tags */
+    text-transform: uppercase; /* Maakt alle letters hoofdletters */
+    font-weight: bold;
+}
+
+.tag.ps4 {
+    background-color: #3498db; /* Blauwe kleur voor PS4 */
+}
+
+.tag.ps5 {
+    background-color: #9b59b6; /* Paarse kleur voor PS5 */
+}
+
+.tag.pc {
+    background-color: #1abc9c; /* PC kleur */
+}

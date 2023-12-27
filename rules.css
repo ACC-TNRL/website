@@ -1,47 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container.mt-5 {
+    margin-top: 0!important;
 }
 
-/* Body and Background Image Styles */
-html {
-    height: 100%; /* Nieuwe regel */
-}
-
-body {
-    display: flex; /* Maakt body een flex container */
-    flex-direction: column; /* Stelt de hoofdas van de flex container in als de verticale as */
-    min-height: 100%; /* Zorgt ervoor dat de body minstens de hoogte van de viewport heeft */
-    margin: 0; /* Reset standaardmarges */
-    background-color: #000; /* Fallback color */
-    background-image: url('background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white; /* Default text color */
-}
-
-/* Main Welcome Message Styles */
-main {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    padding: 4rem 0; /* Add padding to give some space around content */
-}
-
-main h1 {
-    font-size: 4rem; /* Larger font size for main heading */
-    margin-bottom: 1rem;
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* More pronounced text shadow for legibility */
-}
-
+/* points section */
 .points-section {
     display: flex;
     justify-content: center;
@@ -62,9 +23,8 @@ main h1 {
 }
 
 .container.rules-text  {
-    background: rgba(0, 0, 0, 0.8); /* Donkere semi-transparante achtergrond */
     margin: 0;
-    border-radius: 8px;
+    border-radius: 15px;
     padding: 0;
 }
 
@@ -75,7 +35,7 @@ main h1 {
 
 .container.rules-text li {
     padding: 0.5rem 1rem; /* Ruime padding rondom de tekst */
-    border-radius: 8px; /* Subtiele afgeronde hoeken */
+    border-radius: 15px; /* Subtiele afgeronde hoeken */
     margin: 1rem 0; /* Ruimte boven en onder de container */
     line-height: 1.6; /* Verbeterde regelhoogte voor leesbaarheid */
     text-align: left; /* Tekst links uitlijnen */
@@ -83,12 +43,11 @@ main h1 {
 }
 
 .tab-container {
-    background: rgba(0, 0, 0, 0.7); /* Donkere semi-transparante achtergrond */
-    border-radius: 10px; /* Afgeronde hoeken */
+    border-radius: 15px; /* Afgeronde hoeken */
     padding: 20px; /* Binnenruimte */
     margin: 20px; /* Buitenruimte */
     color: #ffffff; /* Witte tekst */
-    max-width: 50%;
+    max-width: 75%;
 }
 
 /* Aanpassen voor betere leesbaarheid */
@@ -106,10 +65,11 @@ main h1 {
 .table-rules {
     background: rgba(0, 0, 0, 0.8); /* Donkere semi-transparante achtergrond */
     padding: 1.5rem;
-    width: 50%;
+    width: 75%;
     border-collapse: collapse;
     margin-top: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds shadow for depth */
+    line-height: 1.5rem;
 }
 
 .table-rules th,

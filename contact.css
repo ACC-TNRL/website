@@ -1,0 +1,15 @@
+main {
+    background: rgba(0, 0, 0, 0.8); /* Donkere semi-transparante achtergrond */
+}
+
+.discord-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Binnenruimte */
+    margin: 20px; /* Buitenruimte */
+
+}

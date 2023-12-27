@@ -82,6 +82,6 @@
 }
 
 .dropdown-menu .dropdown-item.active, .dropdown-menu .dropdown-item:active {
-    background-color: #12694c !important; /* Oranje achtergrond */
-    color: #ffffff !important; /* Zwarte tekst */
+    background-color: #FFA500 !important; /* Oranje achtergrond */
+    color: #000000 !important; /* Zwarte tekst */
 }

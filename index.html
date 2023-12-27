@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="mobile-styles.css" media="screen and (max-width: 768px)">
         <link rel="stylesheet" href="nav.pills.css">
+        <link rel="stylesheet" href="generic.css">  
+        <link rel="stylesheet" href="news.css">              
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="footer.css">
@@ -88,22 +90,31 @@
         <section id="home" class="welcome-section">
             <h1>Welcome to Thursday Night Racing League</h1>
             <img src="logo.png" alt="Thursday Night Racing League Logo" class="logo"> <!-- Logo added here -->
+            <button class="info-signup-btn" onclick="window.open('https://discord.gg/BfQFWw6uNQ', '_blank'); this.blur();">
+                <span>JOIN NOW</span>
+            </button>
             <!-- Add a carousel or intro content here -->
         </section>
 <!-- Latest News Section -->
         <section id="latest-news" class="news-section">
             <div class="container">
-               <h2>Latest news</h2>
-                <div class="news-item">
-                  <img src="news-image.jpg" alt="Nieuws Afbeelding" class="news-image">
-                  <div class="news-content">
-                        <h3>2023-1: The season has started!</h3>
-                     <p class="news-date">17-09-2023</p>
-                      <p>The opening round of the 2023 TNRL Championship at the legendary Silverstone circuit delivered a breathtaking battle that had fans on the edge of their seats...</p>
-                      <a href="news-article.html" class="read-more">Read more</a>
-                   </div>
-               </div>
-          </div>
+                <h2>Latest news</h2>
+                <!-- Nieuwsartikel 1 -->
+                <article class="news-item">
+                    <div class="news-image-container">
+                        <img src="news-image.jpg" alt="Nieuws Afbeelding 1" class="news-image">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-tags">
+                            <span class="tag ps4">PS4</span>
+                            <span class="tag ps5">PS5</span>
+                        </div>
+                        <h3>Title article 2</h3>
+                        <p class="news-date">12/12/2023</p>
+                        <p>Short description of article 2...</p>
+                        <a href="news-article1.html" class="read-more">Read more</a>
+                    </div>
+                </article>        
         </section>
     </main>    
 

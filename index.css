@@ -1,47 +1,48 @@
-/* styles.css */
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* index.css */
+
+/* Join us button */
+.info-signup-btn {
+    background: rgba(0, 40, 0, 1.0); /* More opaque for better readability */
+    color: #ffffff; /* Tekstkleur voor de knop */
+    text-decoration: none; /* Verwijdert onderstreping van links */
+    padding: 10px 20px; /* Aanpassen padding indien nodig */
+    display: inline-block; /* Gebruik flexbox voor centrering */
+    justify-content: center; /* Horizontale centrering */
+    align-items: center; /* Verticale centrering */
+    border: 2px solid transparent; /* Transparante rand voor een gelijkmatige grootte */
+    cursor: pointer; /* Verandert cursor naar pointer bij hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Gladde overgang voor hover effecten */
+    border-radius: 25px; /* Afgeronde hoeken voor de knop */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Voegt een subtiele schaduw toe */
+    will-change: transform, box-shadow, border-color; /* Optimalisatie voor animaties */
+    position: relative; /* Nodig voor positionering van het ::after element */
+    overflow: hidden; /* Voorkomt dat inhoud buiten de knop zichtbaar wordt */
 }
 
-/* Body and Background Image Styles */
-html {
-    height: 100%; /* Nieuwe regel */
+.info-signup-btn::after {
+    content: '>'; /* Pijltje */
+    color: #ffffff; /* Witte kleur */
+    opacity: 0; /* Begint onzichtbaar */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Overgang voor zichtbaarheid en beweging */
+    position: absolute; /* Absolute positionering binnen de knop */
+    right: 20px; /* Positie vanaf de rechterkant */
+    top: 50%; /* Centreert verticaal */
+    transform: translateY(-50%) translateX(0px); /* Startpositie buiten de knop */
 }
 
-body {
-    display: flex; /* Maakt body een flex container */
-    flex-direction: column; /* Stelt de hoofdas van de flex container in als de verticale as */
-    min-height: 100%; /* Zorgt ervoor dat de body minstens de hoogte van de viewport heeft */
-    margin: 0; /* Reset standaardmarges */
-    background-color: #000; /* Fallback color */
-    background-image: url('background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white; /* Default text color */
+.info-signup-btn:hover {
+    transform: translateY(-5px); /* Verplaatst de knop omhoog bij hover */
+    background-color: #ff4500; /* Verandert de achtergrondkleur bij hover */
+    border-color: #ffffff; /* Witte rand bij hover */
 }
 
-/* Main Welcome Message Styles */
-main {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    padding: 4rem 0; /* Add padding to give some space around content */
+.info-signup-btn:hover::after {
+    opacity: 1; /* Maakt het pijltje zichtbaar bij hover */
+    transform: translateY(-50%) translateX(15px); /* Eindpositie binnen de knop */
 }
 
-main h1 {
-    font-size: 4rem; /* Larger font size for main heading */
-    margin-bottom: 1rem;
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* More pronounced text shadow for legibility */
+.info-signup-btn:focus {
+    outline: none; /* Verwijdert de standaard focus outline */
 }
 
 /* Logo Styles */
@@ -54,11 +55,23 @@ main h1 {
 
 /* News Section Styles */
 .news-section {
-    background: rgba(12, 12, 12, 0.8); /* Donkere achtergrond met een opacity van 0.8 */
+    width: 75%;
     color: #ffffff; /* Witte tekst voor leesbaarheid */
     margin-top: 75px;
     padding: 40px 0; /* Verticale padding boven, horizontale padding rechts en links, verticale padding onder */
-    border-radius: 10px;
+    border-radius: 15px;
+}
+
+.news-item {
+    background: rgba(12, 12, 12, 0.8); /* Donkere achtergrond met een opacity van 0.8 */
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px; /* Voeg je border-radius toe */
+    overflow: hidden; /* Voeg deze regel toe */
+    padding: 1rem;
 }
 
 .news-section .container {
@@ -86,10 +99,11 @@ main h1 {
     width: 300px; /* Breedte van de nieuwsafbeelding */
     height: 200px; /* Hoogte van de nieuwsafbeelding */
     object-fit: cover; /* Zorgt dat de afbeelding de ruimte vult */
-    border-radius: 10px; /* Afgeronde hoeken voor de afbeelding */
+    border-radius: 15px; /* Afgeronde hoeken voor de afbeelding */
 }
 
 .news-section .news-content {
+    background: none;
     flex: 1; /* Vult de overgebleven ruimte */
 }
 
