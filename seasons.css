@@ -62,19 +62,21 @@ section#seasons.seasons-section{
 
 .container-seasons {
     width: 100%;
-    margin: 0 auto; /* Centers the container */
     display: flex;
     padding: 20px;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
 }
 
 /* Individual season cards */
 .season-card {
     display: flex; /* Allows for flexible layouts inside the card */
     flex-direction: column; /* Stacks items vertically */
-    max-width: 15%; /* Ensures the card is not wider than its container */
-    margin-bottom: 20px; /* Spacing between cards */
+    max-width: 10%; /* Ensures the card is not wider than its container */
+    margin: 2rem; /* Spacing between cards */
 }
 
 /* The image within the card */

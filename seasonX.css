@@ -44,13 +44,31 @@ main h1 {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* More pronounced text shadow for legibility */
 }
 
-/* Rules Standings Styles*/
+h2 {
+    margin: 1rem;
+}
+
+/* Standings Styles*/
 section#standings.standings-section {
-    max-width: 80%;
+    background: rgba(0, 0, 0, 0.7); /* Donkere semi-transparante achtergrond */
+    border-radius: 10px; /* Afgeronde hoeken */
+    padding: 20px; /* Binnenruimte */
+    margin: 20px; /* Buitenruimte */
+    max-width: 90%;
     justify-content: center;
 }
 
-div#standings.tab-pane.fade.show.active {
+.lineup-section {
+    background: rgba(0, 0, 0, 0.7); /* Donkere semi-transparante achtergrond */
+    border-radius: 10px; /* Afgeronde hoeken */
+    padding: 20px; /* Binnenruimte */
+    margin: 20px; /* Buitenruimte */
+    max-width: 90%;
+    justify-content: center;
+}
+
+.tab-pane.fade.show.active {
+    max-width: 100%;
     justify-content: flex-start;
     display: flex;
     align-content: center;
@@ -60,7 +78,14 @@ div#standings.tab-pane.fade.show.active {
 }
 
 img.standings {
-    max-width: 50%;
+    width: 1024px;
+    max-width: 75%;
+    border-radius: 10px;
+}
+
+img.driver-lineup {
+    width: 1024px;
+    max-width: 75%;
     border-radius: 10px;
 }
 
@@ -101,14 +126,32 @@ img.standings {
 /* Race Report Styles */
 
 .race-image {
-    max-width: 50%;
-    height: auto;
+    width: 1024px;
+    max-width: 75%;
     border-radius: 10px;
+    height: auto;
 }
 
 /* Rules Section Styles */
 
 /* Aanpassen voor betere leesbaarheid */
-.tab-content > .tab-pane {
-    margin-top: 20px; /* Voegt ruimte toe boven de tab content */
+.tab-content {
+    background: transparent;
+    border-radius: 10px; /* Afgeronde hoeken */
+    padding-bottom: 20px; /* Binnenruimte */
+    margin: 20px auto; /* Buitenruimte en centreren */
+    max-width: 100%; /* Maximale breedte */
+    display: flex; /* Maakt het een flex container */
+    flex-direction: column; /* Elementen verticaal stapelen */
+    align-items: center; /* Centreert items horizontaal */
+    text-align: center; /* Tekst centreren */
+}
+
+.tab-content-container {
+    background: rgba(0, 0, 0, 0.8); /* Donkere semi-transparante achtergrond */
+    border-radius: 10px; /* Afgeronde hoeken */
+    margin: 20px auto; /* Buitenruimte en centreren */
+    max-width: 90%; /* Maximale breedte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Schaduw voor diepte */
+    color: #fff; /* Witte tekstkleur */
 }
