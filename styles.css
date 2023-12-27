@@ -90,6 +90,8 @@ main h1 {
 
 .news-section .news-content {
     flex: 1; /* Vult de overgebleven ruimte */
+    font-size: 1.8rem; /* Lettergrootte voor nieuwsitem titel */
+    margin-bottom: 10px; /* Ruimte onder de titel */
 }
 
 .news-section .news-content h3 {

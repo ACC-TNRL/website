@@ -81,8 +81,6 @@
 }
 
 .news-section h2 {
-    font-size: 2.5rem; /* Grotere lettergrootte voor titel */
-    margin-bottom: 30px; /* Ruimte onder de titel */
     color: #FFA500; /* Oranje kleur voor de titel */
     text-transform: uppercase; /* Maakt de tekst in hoofdletters */
 }
